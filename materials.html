@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Materiaalbibliotheek | Beatrix Operations Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="ops-body">
+    <div class="ops-grid"></div>
+    <header class="ops-header">
+      <a class="ops-brand" href="./index.html">
+        <span class="ops-brand-mark">B</span>
+        <span>
+          <strong>Beatrix Operations Platform</strong>
+          <small>Materiaalbibliotheek</small>
+        </span>
+      </a>
+      <nav class="ops-nav">
+        <a href="./website.html">Home</a>
+        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./debras.html">Debras</a>
+        <a class="is-active" href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./updates.html">Updates</a>
+        <a href="./supervisor.html">Supervisor</a>
+        <a href="./form.html">Voorbereidingsformulier</a>
+        <a href="./app.html">App</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="scope-banner">
+        Visuele materiaalbibliotheek voor werkzaamheden in het Beatrixgebouw.
+      </section>
+
+      <section class="section-header">
+        <p class="eyebrow">Visuele herkenning</p>
+        <h2>Geen extraatje, maar kernfunctionaliteit</h2>
+      </section>
+
+      <section class="object-grid">
+        <article class="object-card">
+          <div class="object-visual visual-crate"></div>
+          <h3>Kratten</h3>
+          <p>Kleurcodering, herkenning en retourcontrole.</p>
+          <div class="status-pill good">Goed: per type gescheiden</div>
+          <div class="status-pill bad">Fout: gemengd en ongeteld</div>
+        </article>
+        <article class="object-card">
+          <div class="object-visual visual-bin"></div>
+          <h3>Bakken</h3>
+          <p>GFT, glas en rest hebben eigen stroom en eigen plek.</p>
+          <div class="status-pill good">Goed: vooraf gepositioneerd</div>
+          <div class="status-pill bad">Fout: zoeken tijdens piek</div>
+        </article>
+        <article class="object-card">
+          <div class="object-visual visual-tray"></div>
+          <h3>Dienbladen</h3>
+          <p>Nieuwe medewerkers zien direct wat juist gebruik is.</p>
+          <div class="status-pill good">Goed: stabiel en schoon gestapeld</div>
+          <div class="status-pill bad">Fout: los in het gangpad</div>
+        </article>
+        <article class="object-card">
+          <div class="object-visual visual-cart"></div>
+          <h3>Rolcontainers</h3>
+          <p>Inzet conform afspraak, niet verwisselen met pallets.</p>
+          <div class="status-pill good">Goed: routegebonden</div>
+          <div class="status-pill bad">Fout: verkeerd type op verkeerde plek</div>
+        </article>
+      </section>
+
+      <section class="section-header">
+        <p class="eyebrow">Voorraad en inhuur</p>
+        <h2>Wat vandaag gecontroleerd moet worden</h2>
+      </section>
+
+      <section class="table-card">
+        <table class="ops-table">
+          <thead>
+            <tr>
+              <th>Onderdeel</th>
+              <th>Status</th>
+              <th>Risico</th>
+              <th>Actie</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GFT-bakken</td>
+              <td>Beperkt</td>
+              <td>Tekort tijdens dinerafbouw</td>
+              <td>Herbevestigen vóór 14:00</td>
+            </tr>
+            <tr>
+              <td>Heman huurmaterialen</td>
+              <td>Onderweg</td>
+              <td>Mancokosten bij onduidelijke ontvangst</td>
+              <td>Tellen en tekenen bij binnenkomst</td>
+            </tr>
+            <tr>
+              <td>Glascontainers</td>
+              <td>Beschikbaar</td>
+              <td>Te laat positioneren</td>
+              <td>Level 4 extra plaatsen om 17:00</td>
+            </tr>
+            <tr>
+              <td>Rolcontainers</td>
+              <td>Afwijkende inzet</td>
+              <td>Verkeerde aanlevervorm</td>
+              <td>Levering weigeren als afspraak niet klopt</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

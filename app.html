@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App | Beatrix Operations Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="ops-body app-layout">
+    <div class="ops-grid"></div>
+    <header class="ops-header">
+      <a class="ops-brand" href="./index.html">
+        <span class="ops-brand-mark">B</span>
+        <span>
+          <strong>Beatrix Operations Platform</strong>
+          <small>Conceptapp</small>
+        </span>
+      </a>
+      <nav class="ops-nav">
+        <a href="./website.html">Home</a>
+        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./debras.html">Debras</a>
+        <a href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./updates.html">Updates</a>
+        <a href="./supervisor.html">Supervisor</a>
+        <a href="./form.html">Voorbereidingsformulier</a>
+        <a class="is-active" href="./app.html">App</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="scope-banner">
+        Deze appbriefing geldt uitsluitend voor werkzaamheden in het
+        Beatrixgebouw en niet voor andere locaties van Jaarbeurs.
+      </section>
+
+      <section class="section-header">
+        <p class="eyebrow">Conceptapp</p>
+        <h2>Mobiele uitvoering voor de vloer</h2>
+      </section>
+
+      <section class="app-showcase">
+        <article class="phone-card">
+          <div class="phone-topline">
+            <span>09:41</span>
+            <span>Beatrix</span>
+            <span>5G</span>
+          </div>
+          <div class="phone-section">
+            <p class="eyebrow">Startscherm</p>
+            <h3>KNMP Voorjaarscongres</h3>
+            <p>9 maart 2026 | Beatrixgebouw level 2 en 4</p>
+            <p class="scope-inline">Alleen geldig voor werk in het Beatrixgebouw.</p>
+          </div>
+          <div class="phone-section">
+            <span class="phone-chip">Dagbriefing actief</span>
+            <span class="phone-chip alert">3 live wijzigingen</span>
+          </div>
+        </article>
+
+        <article class="phone-card">
+          <div class="phone-topline">
+            <span>09:42</span>
+            <span>Routekeuze</span>
+            <span>5G</span>
+          </div>
+          <div class="phone-section">
+            <p class="eyebrow">Kies jouw route</p>
+            <div class="route-switcher">
+              <button class="route-button is-active" data-route-target="nieuw">Ik werk hier voor het eerst</button>
+              <button class="route-button" data-route-target="bekend">Ik ken het Beatrixgebouw al</button>
+              <button class="route-button" data-route-target="supervisor">Ik ben supervisor</button>
+            </div>
+          </div>
+          <div class="phone-section route-panel is-visible" data-route-panel="nieuw">
+            <strong>Nieuwe medewerker-route</strong>
+            <ol class="step-list">
+              <li>Zone van vandaag</li>
+              <li>Liften en Debras-punt</li>
+              <li>Gangpadregels</li>
+              <li>Dienbladen, karren, rolcontainers</li>
+              <li>Afval en krattenherkenning</li>
+            </ol>
+          </div>
+          <div class="phone-section route-panel" data-route-panel="bekend">
+            <strong>Bekende medewerker-route</strong>
+            <ol class="step-list">
+              <li>Wat is vandaag anders</li>
+              <li>Materiaalfocus</li>
+              <li>Routing en updates</li>
+              <li>Belangrijkste focuspunten</li>
+            </ol>
+          </div>
+          <div class="phone-section route-panel" data-route-panel="supervisor">
+            <strong>Supervisor-route</strong>
+            <ol class="step-list">
+              <li>Event-overzicht</li>
+              <li>Spoel- en pauzelogica</li>
+              <li>Debras-doorstroming</li>
+              <li>Controlepunten</li>
+            </ol>
+          </div>
+        </article>
+
+        <article class="phone-card">
+          <div class="phone-topline">
+            <span>13:40</span>
+            <span>Live update</span>
+            <span>Push</span>
+          </div>
+          <div class="phone-section">
+            <p class="eyebrow">Wijziging</p>
+            <div class="phone-alert">
+              <strong>Lift B tijdelijk exclusief voor ombouw</strong>
+              <p>Waar: level 2 liftzone</p>
+              <p>Voor wie: ervaren medewerkers en supervisors</p>
+              <p>Wat nu doen: via servicegang Noord en lift A retour laten lopen.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="two-column">
+        <article class="panel-card">
+          <h3>Waarom deze app wél klopt met het dossier</h3>
+          <ul class="bullet-list">
+            <li>Nieuwe medewerker-route staat centraal.</li>
+            <li>Live updateblok is dominant en actiegericht.</li>
+            <li>Debras blijft zichtbaar in route en meldingen.</li>
+          </ul>
+        </article>
+        <article class="panel-card">
+          <h3>Koppeling met de website</h3>
+          <ul class="bullet-list">
+            <li>Website = voorbereiden, instrueren, beheren.</li>
+            <li>App = uitvoeren op de vloer.</li>
+            <li>Beide gebruiken dezelfde briefingbron en update-logica.</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

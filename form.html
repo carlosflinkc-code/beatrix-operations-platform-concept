@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voorbereidingsformulier | Beatrix Operations Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="ops-body">
+    <div class="ops-grid"></div>
+    <header class="ops-header">
+      <a class="ops-brand" href="./index.html">
+        <span class="ops-brand-mark">B</span>
+        <span>
+          <strong>Beatrix Operations Platform</strong>
+          <small>Voorbereidingsformulier</small>
+        </span>
+      </a>
+      <nav class="ops-nav">
+        <a href="./website.html">Home</a>
+        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./debras.html">Debras</a>
+        <a href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./updates.html">Updates</a>
+        <a href="./supervisor.html">Supervisor</a>
+        <a class="is-active" href="./form.html">Voorbereidingsformulier</a>
+        <a href="./app.html">App</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="scope-banner">
+        Voorbereidings- en controleformulier per partij voor het Beatrixgebouw.
+      </section>
+
+      <section class="section-header">
+        <p class="eyebrow">Vaste overdraagbare structuur</p>
+        <h2>Voorbereidingsformulier KNMP Voorjaarscongres</h2>
+      </section>
+
+      <form class="form-shell">
+        <section class="form-card">
+          <h3>Partijgegevens</h3>
+          <div class="form-grid">
+            <label>
+              Partij
+              <input type="text" value="KNMP Voorjaarscongres" />
+            </label>
+            <label>
+              Datum
+              <input type="text" value="9 maart 2026" />
+            </label>
+            <label>
+              Locatie
+              <input type="text" value="Beatrixgebouw level 2 en 4" />
+            </label>
+            <label>
+              Supervisor
+              <input type="text" value="Nog toe te wijzen" />
+            </label>
+          </div>
+        </section>
+
+        <section class="form-card">
+          <h3>Vooraf te controleren</h3>
+          <div class="check-grid">
+            <label><input type="checkbox" checked /> GFT-bakken bevestigd</label>
+            <label><input type="checkbox" checked /> Glascontainers bevestigd</label>
+            <label><input type="checkbox" /> Huurmaterialen geteld bij ontvangst</label>
+            <label><input type="checkbox" /> Levervormen voldoen aan afspraak</label>
+            <label><input type="checkbox" checked /> Liftzone vrij en gemarkeerd</label>
+            <label><input type="checkbox" /> Nieuwe medewerkers ingepland voor onboarding</label>
+          </div>
+        </section>
+
+        <section class="form-card">
+          <h3>Debras en retour</h3>
+          <div class="form-grid">
+            <label>
+              Debras-route vandaag
+              <input type="text" value="Servicegang Noord" />
+            </label>
+            <label>
+              Liftprioriteit
+              <input type="text" value="Lift B exclusief 16:30 - 17:15" />
+            </label>
+            <label class="form-span">
+              Opmerkingen
+              <textarea rows="5">Extra glasretour na walking dinner. Spoel vooraf informeren en level 4 extra glascontainers plaatsen.</textarea>
+            </label>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
