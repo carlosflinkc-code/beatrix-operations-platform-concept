@@ -1900,7 +1900,9 @@ h3 {
 .contact-grid,
 .dispatch-grid,
 .schematic-grid,
-.ops-kpis {
+.ops-kpis,
+.order-split,
+.order-outline {
   display: grid;
   gap: 18px;
 }
@@ -1927,12 +1929,23 @@ h3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.order-outline {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.order-split {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .workspace-panel,
 .room-card,
 .contact-card,
 .dispatch-card,
 .flow-step,
-.schematic-node {
+.schematic-node,
+.order-section,
+.order-card {
   padding: 24px;
   border-radius: var(--radius-lg);
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(18, 28, 36, 0.98));
@@ -1969,6 +1982,31 @@ h3 {
 .flow-step p,
 .schematic-node span {
   color: var(--muted);
+}
+
+.order-section {
+  display: grid;
+  gap: 18px;
+}
+
+.order-section-header {
+  display: grid;
+  gap: 8px;
+}
+
+.order-section-header h3,
+.order-card h4 {
+  margin: 0;
+}
+
+.order-text {
+  display: grid;
+  gap: 10px;
+}
+
+.order-text p {
+  margin: 0;
+  color: #dbe5ec;
 }
 
 .ops-kpi {
@@ -2032,7 +2070,9 @@ h3 {
   .contact-grid,
   .dispatch-grid,
   .schematic-grid,
-  .ops-kpis {
+  .ops-kpis,
+  .order-split,
+  .order-outline {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2063,7 +2103,9 @@ h3 {
   .contact-grid,
   .dispatch-grid,
   .schematic-grid,
-  .ops-kpis {
+  .ops-kpis,
+  .order-split,
+  .order-outline {
     grid-template-columns: 1fr;
   }
 
