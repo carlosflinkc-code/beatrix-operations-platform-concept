@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beatrix-zonekaart | Beatrix Operations Platform</title>
+    <title>Locaties &amp; Zalen | Beatrix Operations Platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,155 +21,79 @@
         </span>
         <span>
           <strong>Beatrix Operations Platform</strong>
-          <small>Beatrix-zonekaart</small>
+          <small>Locaties &amp; zalen</small>
         </span>
       </a>
       <nav class="ops-nav">
-        <a href="./website.html">Home</a>
-        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./website.html">Portal</a>
+        <a href="./work-order.html">Work Order</a>
+        <a href="./audiences.html">Routes</a>
+        <a class="is-active" href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
-        <a href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./materials.html">Materialen</a>
         <a href="./updates.html">Updates</a>
         <a href="./supervisor.html">Supervisor</a>
-        <a href="./form.html">Voorbereidingsformulier</a>
+        <a href="./coordinator.html">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>
 
     <main class="page-shell">
       <section class="scope-banner">
-        Conceptuele zonekaart voor briefing, onboarding en Debras-routing binnen het Beatrixgebouw.
+        Deze locatiepagina bundelt de Beatrix-specifieke zalen en sublocaties die in de briefing- en work-orderlaag gebruikt moeten kunnen worden.
       </section>
 
       <nav class="breadcrumb">
         <a href="./index.html">Demo</a>
         <span>/</span>
-        <a href="./website.html">Website</a>
-        <span>/</span>
-        <span>Beatrix-zonekaart</span>
+        <span>Locaties &amp; zalen</span>
       </nav>
 
-      <div class="page-tabs">
-        <a href="#kaart">Kaart</a>
-        <a href="#liftzone">Liftzone</a>
-        <a href="#veiligheid">Veiligheid</a>
-      </div>
-
-      <section class="section-header" id="kaart">
-        <p class="eyebrow">Zonekaart</p>
-        <h2>Welke plekken medewerkers direct moeten herkennen</h2>
+      <section class="section-header">
+        <p class="eyebrow">Officiële en operationele locaties</p>
+        <h2>Een event kan in één zaal, meerdere zalen of een combinatie van theater en foyer plaatsvinden.</h2>
       </section>
 
-      <section class="map-shell">
-        <article class="map-board">
-          <div class="map-grid">
-            <section class="map-level">
-              <h3>Level 4</h3>
-              <div class="map-row">
-                <div class="map-node route">Dineropbouw</div>
-                <div class="map-node warning">Glasretourzone</div>
-                <div class="map-node route">Servicegang Noord</div>
-              </div>
-            </section>
-            <section class="map-level">
-              <h3>Level 2</h3>
-              <div class="map-row">
-                <div class="map-node route">Plenaire zaal</div>
-                <div class="map-node critical">Lift B</div>
-                <div class="map-node route">Briefingpunt entree</div>
-              </div>
-            </section>
-            <section class="map-level">
-              <h3>Service &amp; logistiek</h3>
-              <div class="map-row">
-                <div class="map-node route">Lift A</div>
-                <div class="map-node warning">Spoelvoorzone</div>
-                <div class="map-node warning">Afvalpunt</div>
-                <div class="map-node route">Retourbuffer</div>
-              </div>
-            </section>
+      <section class="location-grid">
+        <article class="location-card">
+          <div class="location-media">
+            <img src="./assets/media/beatrixgebouw-official.jpg" alt="Beatrixgebouw Jaarbeurs" />
           </div>
+          <h3>Beatrixgebouw</h3>
+          <p>Hoofdscope van het platform. Alle briefing-, onboarding- en Debras-logica in deze demo is daarop gericht.</p>
+          <p class="location-source">Bron: officiële Jaarbeurs-locatiepagina.</p>
         </article>
-
-        <aside class="map-legend">
-          <div class="legend-item">
-            <span class="legend-dot blue"></span>
-            <div>
-              <strong>Route</strong>
-              <p>Standaard looplijn voor service, retour of onboarding.</p>
-            </div>
+        <article class="location-card">
+          <div class="location-media">
+            <img src="./assets/media/expozaal-official.jpg" alt="Expozaal Jaarbeurs" />
           </div>
-          <div class="legend-item">
-            <span class="legend-dot orange"></span>
-            <div>
-              <strong>Extra aandacht</strong>
-              <p>Plekken waar afval, glas of Debras kan opstropen.</p>
-            </div>
+          <h3>Expozaal</h3>
+          <p>Relevant voor congressen, presentaties en events met doorstroom naar foyers, cateringpunten en Debras-liftzones.</p>
+          <p class="location-source">Bron: officiële Jaarbeurs-pagina voor Expozaal.</p>
+        </article>
+        <article class="location-card">
+          <div class="location-media">
+            <img src="./assets/media/mies-bouwman-official.jpg" alt="Mies Bouwman Foyer Jaarbeurs" />
           </div>
-          <div class="legend-item">
-            <span class="legend-dot red"></span>
-            <div>
-              <strong>Kritisch punt</strong>
-              <p>Locaties waar blokkade direct effect heeft op de partij.</p>
-            </div>
+          <h3>Mies Bouwman Foyer</h3>
+          <p>Relevant als ontvangstruimte, buffer, cateringzone en operationeel scharnierpunt rond eventwisselingen.</p>
+          <p class="location-source">Bron: officiële Jaarbeurs-pagina voor Mies Bouwman Foyer.</p>
+        </article>
+        <article class="location-card">
+          <div class="location-media">
+            <img src="./assets/media/jaarbeurs-event.jpg" alt="Beatrix Theater Jaarbeurs" />
           </div>
-        </aside>
-      </section>
-
-      <section class="section-header" id="liftzone">
-        <p class="eyebrow">Liftzone</p>
-        <h2>Niet onderhandelbare regels voor doorstroming</h2>
-      </section>
-
-      <section class="scenario-grid">
-        <article class="scenario-card">
-          <span class="status-chip stable">Goed</span>
-          <h3>Liftzone vrij</h3>
-          <p>Alleen materiaal in actieve doorstroom, geen wachtopslag of losse stapels in de route.</p>
-        </article>
-        <article class="scenario-card">
-          <span class="status-chip operational">Risico</span>
-          <h3>Tijdelijke piekdruk</h3>
-          <p>Supervisor plant retourvensters en communiceert alternatieve lift- of serviceganglogica.</p>
-        </article>
-        <article class="scenario-card">
-          <span class="status-chip critical">Fout</span>
-          <h3>Blokkade in gangpad</h3>
-          <p>Karren, glas of dienbladen staan geparkeerd in plaats van in beweging, waardoor ombouw of Debras stokt.</p>
+          <h3>Beatrix Theater</h3>
+          <p>Van belang wanneer evenementen theater, foyer en Expozaal combineren in één dagprogramma en dus meerdere routinglagen vragen.</p>
+          <p class="location-source">Bron: officiële Jaarbeurs-pagina voor Beatrix Theater.</p>
         </article>
       </section>
 
-      <section class="section-header" id="veiligheid">
-        <p class="eyebrow">Veiligheid &amp; oriëntatie</p>
-        <h2>Wat nieuwe medewerkers minstens moeten weten</h2>
+      <section class="quote-strip">
+        <strong>Operationele aanvulling</strong><br />
+        Johan Friso Foyer wordt in deze demo meegenomen als operationele briefinglocatie op basis van jouw input, ook al kon ik die benaming niet
+        publiek bevestigd terugvinden op de huidige Jaarbeurs-website.
       </section>
-
-      <section class="hotspot-grid">
-        <article class="hotspot-card">
-          <h3>Nooduitgangen</h3>
-          <p>Moeten herkenbaar en vrij blijven, ook tijdens piekmomenten en afbouw.</p>
-        </article>
-        <article class="hotspot-card">
-          <h3>Toiletten &amp; pauzepunten</h3>
-          <p>Nieuw personeel hoort deze locaties te kennen vóór aanvang van de dienst.</p>
-        </article>
-        <article class="hotspot-card">
-          <h3>Briefingpunt</h3>
-          <p>Hier landen onboarding, routekeuze en laatste operationele updates samen.</p>
-        </article>
-      </section>
-
-      <footer class="demo-footer">
-        <div>
-          <strong>Oriëntatie als kernlaag</strong>
-          <p>Deze pagina laat zien dat gebouwkennis niet impliciet mag blijven. Zonder zonekaart blijft onboarding te abstract en te foutgevoelig.</p>
-        </div>
-        <div class="footer-links">
-          <a href="./onboarding.html">Onboarding</a>
-          <a href="./briefing.html">Dagbriefing</a>
-          <a href="./app.html">App</a>
-        </div>
-      </footer>
     </main>
 
     <script src="./assets/app.js"></script>

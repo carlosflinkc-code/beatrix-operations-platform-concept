@@ -21,25 +21,26 @@
         </span>
         <span>
           <strong>Beatrix Operations Platform</strong>
-          <small>Conceptapp</small>
+          <small>App</small>
         </span>
       </a>
       <nav class="ops-nav">
-        <a href="./website.html">Home</a>
-        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./website.html">Portal</a>
+        <a href="./work-order.html">Work Order</a>
+        <a href="./audiences.html">Routes</a>
+        <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
-        <a href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./materials.html">Materialen</a>
         <a href="./updates.html">Updates</a>
         <a href="./supervisor.html">Supervisor</a>
-        <a href="./form.html">Voorbereidingsformulier</a>
+        <a href="./coordinator.html">Coördinator</a>
         <a class="is-active" href="./app.html">App</a>
       </nav>
     </header>
 
     <main class="page-shell">
       <section class="scope-banner">
-        Deze appbriefing geldt uitsluitend voor werkzaamheden in het
-        Beatrixgebouw en niet voor andere locaties van Jaarbeurs.
+        Deze appbriefing geldt uitsluitend voor werkzaamheden in het Beatrixgebouw. Deel per gebruiker alleen de route die relevant is.
       </section>
 
       <nav class="breadcrumb">
@@ -48,34 +49,22 @@
         <span>App</span>
       </nav>
 
-      <div class="page-tabs">
-        <a href="#conceptapp">Conceptapp</a>
-        <a href="#appstructuur">Appstructuur</a>
-        <a href="#vervolg">Vervolgschermen</a>
-      </div>
-
-      <section class="section-header" id="conceptapp">
-        <p class="eyebrow">Conceptapp</p>
-        <h2>Mobiele uitvoering voor de vloer</h2>
-      </section>
-
-      <section class="two-column">
-        <article class="panel-card panel-card-strong">
-          <h3>Wat deze app anders doet dan een pdf</h3>
-          <p>
-            De app geeft niet alles aan iedereen. Medewerkers kiezen eerst hun
-            route en krijgen daarna precies die informatie die nodig is voor hun
-            niveau en rol, inclusief live wijzigingen en directe instructie.
+      <section class="hero-slab compact-hero">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Mobiele vloerlaag</p>
+          <h1>De app toont niet alles aan iedereen, maar alleen wat nu nodig is.</h1>
+          <p class="lead">
+            Deze app is de uitvoeringslaag van de digitale work order. De bron zit in het portal; de app vertaalt die bron naar gerichte
+            schermen voor nieuwe medewerkers, bekende medewerkers, supervisors en coördinatie.
           </p>
-        </article>
-        <article class="panel-card">
-          <h3>Wat je hier meteen moet snappen</h3>
-          <ul class="bullet-list">
-            <li>Waar je vandaag werkt.</li>
-            <li>Wat vandaag anders is dan normaal.</li>
-            <li>Wat je nu direct moet doen als er iets wijzigt.</li>
-          </ul>
-        </article>
+          <div class="route-banner" data-role-badge>Rolkeuze vereist</div>
+        </div>
+        <aside class="side-highlight">
+          <img class="feature-photo" src="./assets/media/mies-bouwman-official.jpg" alt="Mies Bouwman Foyer Jaarbeurs" />
+          <span class="highlight-label">Delen</span>
+          <strong>Gebruik rol-specifieke links</strong>
+          <p>Bijvoorbeeld `?role=nieuw` of `?role=supervisor`, zodat de gebruiker direct in de juiste route landt.</p>
+        </aside>
       </section>
 
       <section class="app-showcase">
@@ -87,13 +76,13 @@
           </div>
           <div class="phone-section">
             <p class="eyebrow">Startscherm</p>
-            <h3>KNMP Voorjaarscongres</h3>
-            <p>9 maart 2026 | Beatrixgebouw level 2 en 4</p>
+            <h3>KNMP Voorjaarscongres 2026</h3>
+            <p>10 maart 2026 · Beatrixgebouw · Expozaal / Mies Bouwman Foyer / 114-E</p>
             <p class="scope-inline">Alleen geldig voor werk in het Beatrixgebouw.</p>
           </div>
           <div class="phone-section">
-            <span class="phone-chip">Dagbriefing actief</span>
-            <span class="phone-chip alert">3 live wijzigingen</span>
+            <span class="phone-chip">Dagbriefing live</span>
+            <span class="phone-chip alert">3 updates actief</span>
           </div>
         </article>
 
@@ -101,42 +90,52 @@
           <div class="phone-topline">
             <span>09:42</span>
             <span>Routekeuze</span>
-            <span>5G</span>
+            <span>Live</span>
           </div>
           <div class="phone-section">
             <p class="eyebrow">Kies jouw route</p>
             <div class="route-switcher">
-              <button class="route-button is-active" data-route-target="nieuw">Ik werk hier voor het eerst</button>
-              <button class="route-button" data-route-target="bekend">Ik ken het Beatrixgebouw al</button>
-              <button class="route-button" data-route-target="supervisor">Ik ben supervisor</button>
+              <button class="route-button is-active" data-route-target="nieuw">Nieuw</button>
+              <button class="route-button" data-route-target="bekend">Bekend</button>
+              <button class="route-button" data-route-target="supervisor">Supervisor</button>
+              <button class="route-button" data-route-target="coordinator">Coördinator</button>
             </div>
           </div>
           <div class="phone-section route-panel is-visible" data-route-panel="nieuw">
-            <strong>Nieuwe medewerker-route</strong>
+            <strong>Nieuwe medewerker</strong>
             <ol class="step-list">
-              <li>Zone van vandaag</li>
-              <li>Liften en Debras-punt</li>
+              <li>Waar werk je vandaag</li>
+              <li>Wat is het Beatrixgebouw</li>
+              <li>Liften en Debras-zone</li>
               <li>Gangpadregels</li>
-              <li>Dienbladen, karren, rolcontainers</li>
-              <li>Afval en krattenherkenning</li>
+              <li>Materiaal en afvalscheiding</li>
             </ol>
           </div>
           <div class="phone-section route-panel" data-route-panel="bekend">
-            <strong>Bekende medewerker-route</strong>
+            <strong>Bekende medewerker</strong>
             <ol class="step-list">
               <li>Wat is vandaag anders</li>
-              <li>Materiaalfocus</li>
-              <li>Routing en updates</li>
-              <li>Belangrijkste focuspunten</li>
+              <li>Welke zaal of foyer is gewijzigd</li>
+              <li>Materiaalfocus en routing</li>
+              <li>Live update en actie</li>
             </ol>
           </div>
           <div class="phone-section route-panel" data-route-panel="supervisor">
-            <strong>Supervisor-route</strong>
+            <strong>Supervisor</strong>
             <ol class="step-list">
-              <li>Event-overzicht</li>
-              <li>Spoel- en pauzelogica</li>
+              <li>Piekmomenten en teamverdeling</li>
               <li>Debras-doorstroming</li>
-              <li>Controlepunten</li>
+              <li>Liftzone en spoelcontrole</li>
+              <li>Nieuwe medewerkers vrijgeven</li>
+            </ol>
+          </div>
+          <div class="phone-section route-panel" data-route-panel="coordinator">
+            <strong>Coördinator</strong>
+            <ol class="step-list">
+              <li>Work order versie</li>
+              <li>Update publiceren</li>
+              <li>Ontvangst en inhuur</li>
+              <li>Audit trail en escalaties</li>
             </ol>
           </div>
         </article>
@@ -144,140 +143,59 @@
         <article class="phone-card">
           <div class="phone-topline">
             <span>13:40</span>
-            <span>Live update</span>
             <span>Push</span>
+            <span>Nu</span>
           </div>
           <div class="phone-section">
-            <p class="eyebrow">Wijziging</p>
+            <p class="eyebrow">Live update</p>
             <div class="phone-alert">
-              <strong>Lift B tijdelijk exclusief voor ombouw</strong>
-              <p>Waar: level 2 liftzone</p>
-              <p>Voor wie: ervaren medewerkers en supervisors</p>
-              <p>Wat nu doen: via servicegang Noord en lift A retour laten lopen.</p>
+              <strong>Buffet verplaatst van Expozaal naar Mies Bouwman Foyer</strong>
+              <p>Waar: Level 2 servicegang en foyeropstelling</p>
+              <p>Voor wie: bekende medewerkers, supervisors en coördinator</p>
+              <p>Wat nu doen: routing en glasretour direct aanpassen.</p>
             </div>
           </div>
         </article>
       </section>
 
-      <section class="section-header" id="appstructuur">
-        <p class="eyebrow">Appstructuur</p>
-        <h2>Welke mobiele lagen nodig zijn voor echte uitvoerbaarheid</h2>
-      </section>
-
-      <section class="architecture-grid">
-        <article class="architecture-card">
-          <span class="metric-label">Startlaag</span>
-          <h3>Partij, datum, locatie en scope</h3>
-          <p>
-            Een medewerker moet zonder zoeken zien om welke partij het gaat,
-            waar gewerkt wordt en dat de briefing alleen geldt voor het
-            Beatrixgebouw.
-          </p>
-        </article>
-        <article class="architecture-card">
-          <span class="metric-label">Rolroute</span>
-          <h3>Nieuw, bekend of supervisor</h3>
-          <p>
-            De app verdeelt de informatie op ervaringsniveau en rol, zodat de
-            onboardinglaag niet botst met de operationele update voor ervaren krachten.
-          </p>
-        </article>
-        <article class="architecture-card">
-          <span class="metric-label">Wijzigingslaag</span>
-          <h3>Melding met directe instructie</h3>
-          <p>
-            Elke wijziging wordt teruggebracht naar vier velden: wat, waar, voor
-            wie en wat nu te doen.
-          </p>
-        </article>
-      </section>
-
-      <section class="two-column">
-        <article class="panel-card">
-          <h3>Nieuwe medewerker-route in gewone taal</h3>
-          <p>
-            Deze route voorkomt dat mensen pas op de werkvloer ontdekken waar
-            servicegangen, liften, Debras-punten, afvalstromen en basisregels
-            zitten. Precies daar ontstaan nu veel fouten.
-          </p>
-        </article>
-        <article class="panel-card panel-card-strong">
-          <h3>Supervisor-route op mobiel</h3>
-          <p>
-            Supervisors hebben ook onderweg overzicht nodig. Daarom laat de app
-            niet alleen onboarding en updates zien, maar ook snelle controle op
-            liftzone, spoel, retour en open risico's.
-          </p>
-        </article>
-      </section>
-
-      <section class="two-column">
-        <article class="panel-card">
-          <h3>Waarom deze app wél klopt met het dossier</h3>
-          <ul class="bullet-list">
-            <li>Nieuwe medewerker-route staat centraal.</li>
-            <li>Live updateblok is dominant en actiegericht.</li>
-            <li>Debras blijft zichtbaar in route en meldingen.</li>
+      <section class="route-grid">
+        <article class="route-column">
+          <h3>Nieuwe medewerker-link</h3>
+          <ul>
+            <li>Gebouwuitleg vóór aankomst</li>
+            <li>Visuele materiaalbibliotheek</li>
+            <li>Debras in gewone taal</li>
+            <li>Checkvragen voor vrijgave</li>
           </ul>
         </article>
-        <article class="panel-card">
-          <h3>Koppeling met de website</h3>
-          <ul class="bullet-list">
-            <li>Website = voorbereiden, instrueren, beheren.</li>
-            <li>App = uitvoeren op de vloer.</li>
-            <li>Beide gebruiken dezelfde briefingbron en update-logica.</li>
+        <article class="route-column">
+          <h3>Bekende medewerker-link</h3>
+          <ul>
+            <li>Alleen de verschillen van vandaag</li>
+            <li>Relevante routing en werkplek</li>
+            <li>Korte updatefeed</li>
+            <li>Geen managementdetails</li>
+          </ul>
+        </article>
+        <article class="route-column">
+          <h3>Supervisor-link</h3>
+          <ul>
+            <li>Controlepunten per tijdsblok</li>
+            <li>Nieuwe medewerkers en vrijgave</li>
+            <li>Debras-doorstroming en liftzone</li>
+            <li>Materialen en afwijkingen</li>
+          </ul>
+        </article>
+        <article class="route-column">
+          <h3>Coördinator-link</h3>
+          <ul>
+            <li>Work order publicatie</li>
+            <li>Ontvangst en inhuur</li>
+            <li>Versiebeheer</li>
+            <li>Audit trail en escalaties</li>
           </ul>
         </article>
       </section>
-
-      <section class="section-header" id="vervolg">
-        <p class="eyebrow">Gerelateerde schermen</p>
-        <h2>Wat vanuit de app bereikbaar moet zijn</h2>
-      </section>
-
-      <section class="related-grid">
-        <a class="related-link" href="./briefing.html">
-          <strong>Dagbriefing</strong>
-          <span>Voor de volledige context achter de dienst van vandaag.</span>
-        </a>
-        <a class="related-link" href="./updates.html">
-          <strong>Updates</strong>
-          <span>Voor het volledige overzicht achter pushmeldingen.</span>
-        </a>
-        <a class="related-link" href="./materials.html">
-          <strong>Materiaalbibliotheek</strong>
-          <span>Voor nieuwe medewerkers die visuele objectuitleg nodig hebben.</span>
-        </a>
-        <a class="related-link" href="./onboarding.html">
-          <strong>Onboardingroute</strong>
-          <span>Voor de volledige 10-stappenroute en checkvragen voor nieuwe medewerkers.</span>
-        </a>
-        <a class="related-link" href="./notifications.html">
-          <strong>Notificatiecentrum</strong>
-          <span>Voor de meldingen op volgorde van prioriteit, doelgroep en opvolgactie.</span>
-        </a>
-        <a class="related-link" href="./zone-map.html">
-          <strong>Zonekaart</strong>
-          <span>Voor medewerkers die eerst het gebouw en de routing moeten begrijpen.</span>
-        </a>
-      </section>
-
-      <footer class="demo-footer">
-        <div>
-          <strong>Mobiele conceptlaag</strong>
-          <p>
-            Deze apppagina is bedoeld als serieuze demonstratie van hoe de
-            briefing op de vloer direct uitvoerbaar wordt, in plaats van een
-            document dat mensen tijdens dienst nog moeten ontcijferen.
-          </p>
-        </div>
-        <div class="footer-links">
-          <a href="./updates.html">Updates</a>
-          <a href="./briefing.html">Briefing</a>
-          <a href="./supervisor.html">Supervisor</a>
-          <a href="./website.html">Website</a>
-        </div>
-      </footer>
     </main>
 
     <script src="./assets/app.js"></script>

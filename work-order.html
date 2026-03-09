@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Work Order | Beatrix Operations Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="ops-body">
+    <div class="ops-grid"></div>
+    <header class="ops-header">
+      <a class="ops-brand" href="./index.html">
+        <span class="ops-brand-mark">
+          <img class="brand-logo" src="./assets/media/jaarbeurs-logo.jpg" alt="Jaarbeurs logo" />
+        </span>
+        <span>
+          <strong>Beatrix Operations Platform</strong>
+          <small>Live Work Order</small>
+        </span>
+      </a>
+      <nav class="ops-nav">
+        <a href="./website.html">Portal</a>
+        <a class="is-active" href="./work-order.html">Work Order</a>
+        <a href="./audiences.html">Routes</a>
+        <a href="./zone-map.html">Locaties</a>
+        <a href="./debras.html">Debras</a>
+        <a href="./materials.html">Materialen</a>
+        <a href="./updates.html">Updates</a>
+        <a href="./supervisor.html">Supervisor</a>
+        <a href="./coordinator.html">Coördinator</a>
+        <a href="./app.html">App</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="scope-banner scope-banner-accent">
+        De Daily Work Order wordt hier omgezet naar een live eventlaag voor het Beatrixgebouw. Detailniveau blijft; printlogica verdwijnt.
+      </section>
+
+      <nav class="breadcrumb">
+        <a href="./index.html">Demo</a>
+        <span>/</span>
+        <a href="./website.html">Portal</a>
+        <span>/</span>
+        <span>Live Work Order</span>
+      </nav>
+
+      <section class="hero-slab compact-hero">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Nieuwe standaard</p>
+          <h1>De bestaande work order wordt de live eventbron voor iedereen.</h1>
+          <p class="lead">
+            De informatie uit de bestaande Daily Work Order is inhoudelijk waardevol en gedetailleerd. Het probleem is niet de inhoud, maar
+            de distributie. Daarom vertaalt deze pagina de order naar een live publicatiemodel met doelgroepselectie en wijzigingsaudit.
+          </p>
+        </div>
+        <aside class="side-highlight">
+          <img class="feature-photo" src="./assets/media/expozaal-official.jpg" alt="Expozaal Jaarbeurs" />
+          <span class="highlight-label">Voorbeeld-event</span>
+          <strong>KNMP Voorjaarscongres 2026</strong>
+          <p>Gekozen als voorbeeld van een event met meerdere blokken, zalen, contactpersonen en wijzigingsrisico.</p>
+        </aside>
+      </section>
+
+      <section class="workorder-shell">
+        <div class="workorder-header">
+          <div class="workorder-brand">
+            <span class="workorder-brand-mark">
+              <img src="./assets/media/jaarbeurs-logo.jpg" alt="Jaarbeurs logo" />
+            </span>
+            <div>
+              <h3>Daily Work Order</h3>
+              <p class="page-kicker">10 maart 2026 · KNMP Voorjaarscongres 2026 · Infectieziekten</p>
+              <div class="pill-row">
+                <span class="pill stable">Status: Firm / Definitive</span>
+                <span class="pill operational">Gasten: 1.410</span>
+                <span class="pill critical">Laatste wijziging: 13:40</span>
+              </div>
+            </div>
+          </div>
+          <div class="workorder-metadata">
+            <article class="meta-card">
+              <span>Bedrijf</span>
+              <strong>KNMP Holding B.V.</strong>
+            </article>
+            <article class="meta-card">
+              <span>Contactpersoon</span>
+              <strong>Mine Lakbir-Demirbag</strong>
+            </article>
+            <article class="meta-card">
+              <span>Event manager</span>
+              <strong>Kelly van der Velden</strong>
+            </article>
+            <article class="meta-card">
+              <span>Coördinator</span>
+              <strong>Noah Geritsen Gerritsen</strong>
+            </article>
+          </div>
+        </div>
+
+        <div class="workorder-board" data-work-order-feed></div>
+      </section>
+
+      <section class="section-header">
+        <p class="eyebrow">Publicatielogica</p>
+        <h2>Wat vroeger herdruk was, wordt nu updatebeheer.</h2>
+      </section>
+
+      <div class="audit-list">
+        <article class="audit-item">
+          <strong>13:40 · Routing aangepast tussen Expozaal en Mies Bouwman Foyer</strong>
+          <p>Wordt gepubliceerd naar bekende medewerkers, supervisor en coördinator. Nieuwe medewerkers zien alleen hun aangepaste looproute.</p>
+        </article>
+        <article class="audit-item">
+          <strong>12:55 · Extra audiovisuele ondersteuning in 114-E Jaarbeurs Meetup</strong>
+          <p>Alleen supervisor en coördinator hoeven dit te zien. De medewerkerroute blijft schoon.</p>
+        </article>
+        <article class="audit-item">
+          <strong>11:20 · Onboarding verplicht vóór inzet</strong>
+          <p>Geldt alleen voor nieuwe medewerkers en de supervisielaag die de vrijgave bewaakt.</p>
+        </article>
+      </div>
+
+      <section class="table-card">
+        <table class="access-table">
+          <thead>
+            <tr>
+              <th>Informatieblok</th>
+              <th>Nieuwe medewerker</th>
+              <th>Bekende medewerker</th>
+              <th>Supervisor</th>
+              <th>Coördinator</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Werkplek en zaal</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>Lift- en Debras-routing</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>Programmadetail en piekmomenten</td>
+              <td>Beperkt</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>Levering, schade, manco en audit</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Beperkt</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>Publicatie van wijzigingen</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Ja</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

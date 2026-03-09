@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Doelgroepen & routes | Beatrix Operations Platform</title>
+    <title>Routes &amp; Toegang | Beatrix Operations Platform</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,112 +21,128 @@
         </span>
         <span>
           <strong>Beatrix Operations Platform</strong>
-          <small>Doelgroepen &amp; routes</small>
+          <small>Routes &amp; toegang</small>
         </span>
       </a>
       <nav class="ops-nav">
-        <a href="./website.html">Home</a>
-        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./website.html">Portal</a>
+        <a href="./work-order.html">Work Order</a>
+        <a class="is-active" href="./audiences.html">Routes</a>
+        <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
-        <a href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./materials.html">Materialen</a>
         <a href="./updates.html">Updates</a>
         <a href="./supervisor.html">Supervisor</a>
-        <a href="./form.html">Voorbereidingsformulier</a>
+        <a href="./coordinator.html">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>
 
     <main class="page-shell">
       <section class="scope-banner">
-        Het systeem werkt pas goed als niet iedereen dezelfde informatiestroom krijgt.
+        Niet iedereen krijgt dezelfde informatie. Deze pagina laat zien hoe het platform per rol wordt afgeschermd en gedeeld.
       </section>
 
       <nav class="breadcrumb">
         <a href="./index.html">Demo</a>
         <span>/</span>
-        <a href="./website.html">Website</a>
-        <span>/</span>
-        <span>Doelgroepen &amp; routes</span>
+        <span>Routes &amp; toegang</span>
       </nav>
 
-      <section class="section-header">
-        <p class="eyebrow">Doelgroepen</p>
-        <h2>Welke informatie hoort bij welke rol</h2>
+      <section class="hero-slab compact-hero">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Need-to-know architectuur</p>
+          <h1>De juiste link moet de juiste informatie tonen, en niet meer dan dat.</h1>
+          <p class="lead">
+            Dat betekent concreet: geen volledige supervisorinformatie voor nieuwe medewerkers, geen leveranciersdetails voor floormedewerkers
+            en geen onnodige overload voor mensen die alleen hoeven te weten waar ze werken en wat vandaag anders is.
+          </p>
+        </div>
+        <aside class="side-highlight">
+          <img class="feature-photo" src="./assets/media/mies-bouwman-official.jpg" alt="Mies Bouwman Foyer Jaarbeurs" />
+          <span class="highlight-label">Deelmodel</span>
+          <strong>Aparte links per route</strong>
+          <p>In deze demo wordt dat getoond met rol-specifieke app-links en aparte beheerpagina’s.</p>
+        </aside>
       </section>
 
-      <section class="three-column">
-        <article class="panel-card panel-card-strong">
-          <span class="panel-code">A</span>
+      <section class="role-grid">
+        <article class="role-card">
+          <span class="metric-label">Route 1</span>
           <h3>Nieuwe medewerker</h3>
-          <p>Heeft context, gebouwuitleg, materiaalherkenning en foutenpreventie nodig voordat hij of zij de vloer op gaat.</p>
+          <p>Locatie, onboarding, Debras-basis, gangpadregels, materiaalherkenning, afvalscheiding en checkvragen.</p>
+          <a class="button button-secondary" href="./app.html?role=nieuw">Deel medewerker-link</a>
         </article>
-        <article class="panel-card">
-          <span class="panel-code">B</span>
+        <article class="role-card">
+          <span class="metric-label">Route 2</span>
           <h3>Bekende medewerker</h3>
-          <p>Heeft vooral behoefte aan afwijkingen, routing van vandaag, materiaalfocus en snelle operationele updates.</p>
+          <p>Wat vandaag anders is, routing, materiaalfocus, uitzonderingen en de relevante live wijzigingen.</p>
+          <a class="button button-secondary" href="./app.html?role=bekend">Deel ervaren-link</a>
         </article>
-        <article class="panel-card">
-          <span class="panel-code">C</span>
-          <h3>Supervisor / coördinatie</h3>
-          <p>Heeft overzicht nodig over voorbereiding, onboardingstatus, Debras, spoel, liftzone en open risico's.</p>
+        <article class="role-card">
+          <span class="metric-label">Route 3</span>
+          <h3>Supervisor</h3>
+          <p>Piekmomenten, personeelslogica, Debras-doorstroming, liftzonecontrole en controlepunten per tijdsblok.</p>
+          <a class="button button-secondary" href="./app.html?role=supervisor">Deel supervisor-link</a>
+        </article>
+        <article class="role-card highlight">
+          <span class="metric-label">Route 4</span>
+          <h3>Coördinator</h3>
+          <p>Publicatie, leverancierscontrole, ontvangst, schade, manco-risico, escalaties en versiebeheer.</p>
+          <a class="button button-primary" href="./coordinator.html">Open coördinatorlaag</a>
         </article>
       </section>
 
-      <section class="section-header">
-        <p class="eyebrow">Informatiebehoefte</p>
-        <h2>Wie ziet wat in website en app</h2>
-      </section>
-
-      <section class="comparison-shell">
-        <table class="comparison-table">
+      <section class="table-card">
+        <table class="access-table">
           <thead>
             <tr>
-              <th>Onderdeel</th>
-              <th>Nieuw</th>
-              <th>Bekend</th>
+              <th>Onderwerp</th>
+              <th>Nieuwe medewerker</th>
+              <th>Bekende medewerker</th>
               <th>Supervisor</th>
+              <th>Coördinator</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td><strong>Gebouwuitleg</strong></td>
-              <td>Volledig</td>
+              <td>Waar werk je vandaag</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>Onboarding en checkvragen</td>
+              <td>Ja</td>
+              <td>Nee</td>
               <td>Beperkt</td>
-              <td>Alleen uitzonderingen</td>
+              <td>Nee</td>
             </tr>
             <tr>
-              <td><strong>Live wijzigingen</strong></td>
-              <td>Alleen relevant voor rol</td>
-              <td>Volledig operationeel</td>
-              <td>Volledig plus borging</td>
+              <td>Piekmomenten en inzetplanning</td>
+              <td>Nee</td>
+              <td>Beperkt</td>
+              <td>Ja</td>
+              <td>Ja</td>
             </tr>
             <tr>
-              <td><strong>Debras-uitleg</strong></td>
-              <td>Basisbegrip</td>
-              <td>Routelogica</td>
-              <td>Volledige doorstroomcontrole</td>
+              <td>Ontvangst en inhuur</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Beperkt</td>
+              <td>Ja</td>
             </tr>
             <tr>
-              <td><strong>Materiaalherkenning</strong></td>
-              <td>Intensief</td>
-              <td>Doelgericht</td>
-              <td>Controlegericht</td>
+              <td>Versiebeheer van work order</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Ja</td>
             </tr>
           </tbody>
         </table>
       </section>
-
-      <footer class="demo-footer">
-        <div>
-          <strong>Routegebaseerd ontwerp</strong>
-          <p>Deze pagina onderbouwt waarom één generieke briefingroute operationeel zwak is en waarom de app- en website-opzet op ervaringsniveau is gesplitst.</p>
-        </div>
-        <div class="footer-links">
-          <a href="./onboarding.html">Onboarding</a>
-          <a href="./app.html">App</a>
-          <a href="./briefing.html">Dagbriefing</a>
-        </div>
-      </footer>
     </main>
 
     <script src="./assets/app.js"></script>

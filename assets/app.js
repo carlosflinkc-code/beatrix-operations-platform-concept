@@ -1,25 +1,25 @@
 const updates = [
   {
-    what: "Lift B tijdelijk exclusief voor ombouw",
-    where: "Level 2 liftzone",
-    audience: "Ervaren medewerkers en supervisors",
-    action: "Laat retour tot 17:15 via servicegang Noord en lift A lopen.",
+    what: "Buffet X verplaatst van Expozaal naar Mies Bouwman Foyer",
+    where: "Level 2 servicegang en foyeropstelling",
+    audience: "Bekende medewerkers, supervisors en coördinator",
+    action: "Pas routing, glasretour en uitgiftepunt per direct aan.",
     time: "13:40",
     highlight: true,
   },
   {
-    what: "Nieuwe medewerkers verplicht eerst door onboardingroute",
-    where: "Briefingpunt entree",
-    audience: "Nieuwe medewerkers en supervisors",
-    action: "Eerst route A afronden, daarna pas inzet op level 2.",
+    what: "Lunchopstelling Jaarbeurs Meetup krijgt extra audiovisuele set",
+    where: "114-E Jaarbeurs Meetup",
+    audience: "Supervisor en coördinator",
+    action: "Controleer stroom, tafelplan en vrij servicepad vóór 14:15.",
     time: "12:55",
     highlight: false,
   },
   {
-    what: "Extra glasretour verwacht na walking dinner",
-    where: "Level 4 en spoelvoorzone",
-    audience: "Alle routes",
-    action: "Extra glascontainers plaatsen en servicegang vrij houden.",
+    what: "Nieuwe medewerkers eerst door digitale onboarding vrijgeven",
+    where: "Entree briefingpunt",
+    audience: "Nieuwe medewerkers en supervisors",
+    action: "Laat pas inchecken na afronding van route, checkvragen en materiaalherkenning.",
     time: "11:20",
     highlight: false,
   },
@@ -27,30 +27,68 @@ const updates = [
 
 const notices = [
   {
-    title: "Lift B exclusief voor ombouw",
+    title: "Expozaal routing aangepast",
     priority: "critical",
     state: "Ongelezen",
-    audience: "Ervaren medewerkers, supervisors",
-    body: "Retour loopt tijdelijk via servicegang Noord en lift A. Supervisor bewaakt vrije liftzone.",
-    meta: ["Level 2 liftzone", "13:40", "Direct handelen"],
+    audience: "Bekende medewerkers, supervisors, coördinator",
+    body: "Uitgifte schuift door naar Mies Bouwman Foyer. Lift B blijft vrij voor retour en hulpmiddelen.",
+    meta: ["Expozaal / Mies Bouwman Foyer", "13:40", "Direct handelen"],
   },
   {
-    title: "Onboardingcheck verplicht voor nieuwe medewerkers",
-    priority: "unread",
+    title: "Lunchworkshop krijgt extra audiovisuele ondersteuning",
+    priority: "operational",
     state: "Nieuw",
-    audience: "Nieuwe medewerkers, supervisors",
-    body: "Nieuwe medewerkers ronden eerst de onboardingroute af voordat zij inzetbaar zijn op level 2.",
-    meta: ["Briefingpunt entree", "12:55", "Incheck vereist"],
+    audience: "Supervisor, coördinator",
+    body: "Controleer opstelling, stroompunt en vrije looplijn in 114-E Jaarbeurs Meetup.",
+    meta: ["114-E", "12:55", "Werkorder aangepast"],
   },
   {
-    title: "Extra glasretour verwacht na walking dinner",
+    title: "Onboardingcheck verplicht",
     priority: "",
     state: "Gelezen",
-    audience: "Alle routes",
-    body: "Extra glascontainers plaatsen op level 4 en servicegang vrij houden voor doorstroming.",
-    meta: ["Level 4", "11:20", "Operationeel"],
+    audience: "Nieuwe medewerkers, supervisor",
+    body: "Nieuwe medewerkers worden pas inzetbaar na routebevestiging en visuele materiaalcheck.",
+    meta: ["Briefingpunt", "11:20", "Vrijgave vereist"],
   },
 ];
+
+const workOrderItems = [
+  {
+    time: "08:00 - 18:00",
+    room: "114-E Jaarbeurs Meetup",
+    title: "Lunchworkshop infectieziekten",
+    owner: "Catering Operations / Audio Visual",
+    status: "Nieuw",
+  },
+  {
+    time: "08:00 - 18:00",
+    room: "Expozaal",
+    title: "Water en servicekratten opstellen",
+    owner: "Catering Operations",
+    status: "Gewijzigd",
+  },
+  {
+    time: "12:00 - 13:30",
+    room: "Mies Bouwman Foyer",
+    title: "Lunch workshop behandeling eczeem",
+    owner: "Supervisor Beatrix",
+    status: "Definitief",
+  },
+  {
+    time: "17:30 - 22:00",
+    room: "Beatrix Theater",
+    title: "Walking dinner en glasretourpiek",
+    owner: "Debras / Spoel / Coördinatie",
+    status: "Kritiek",
+  },
+];
+
+const routeLabels = {
+  nieuw: "Nieuwe medewerker-link actief",
+  bekend: "Bekende medewerker-link actief",
+  supervisor: "Supervisor-link actief",
+  coordinator: "Coördinator-link actief",
+};
 
 function renderUpdateFeed() {
   const feeds = document.querySelectorAll("[data-update-feed]");
@@ -87,25 +125,6 @@ function renderUpdateFeed() {
   });
 }
 
-function wireRoutes() {
-  const buttons = document.querySelectorAll("[data-route-target]");
-  const panels = document.querySelectorAll("[data-route-panel]");
-  if (!buttons.length || !panels.length) return;
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = button.getAttribute("data-route-target");
-      buttons.forEach((item) => item.classList.toggle("is-active", item === button));
-      panels.forEach((panel) => {
-        panel.classList.toggle(
-          "is-visible",
-          panel.getAttribute("data-route-panel") === target,
-        );
-      });
-    });
-  });
-}
-
 function renderNoticeFeed() {
   const feeds = document.querySelectorAll("[data-notice-feed]");
   if (!feeds.length) return;
@@ -131,6 +150,84 @@ function renderNoticeFeed() {
   });
 }
 
+function renderWorkOrderFeed() {
+  const feeds = document.querySelectorAll("[data-work-order-feed]");
+  if (!feeds.length) return;
+
+  const html = workOrderItems
+    .map(
+      (item) => `
+        <article class="workorder-row">
+          <div class="workorder-time">${item.time}</div>
+          <div class="workorder-main">
+            <strong>${item.title}</strong>
+            <p>${item.room}</p>
+          </div>
+          <div class="workorder-owner">${item.owner}</div>
+          <div class="workorder-state">${item.status}</div>
+        </article>
+      `,
+    )
+    .join("");
+
+  feeds.forEach((feed) => {
+    feed.innerHTML = html;
+  });
+}
+
+function activateRoute(target) {
+  const buttons = document.querySelectorAll("[data-route-target]");
+  const panels = document.querySelectorAll("[data-route-panel]");
+
+  buttons.forEach((button) => {
+    button.classList.toggle("is-active", button.getAttribute("data-route-target") === target);
+  });
+
+  panels.forEach((panel) => {
+    panel.classList.toggle("is-visible", panel.getAttribute("data-route-panel") === target);
+  });
+
+  document.querySelectorAll("[data-role-badge]").forEach((badge) => {
+    badge.textContent = routeLabels[target] || "Rolkeuze vereist";
+  });
+}
+
+function wireRoutes() {
+  const buttons = document.querySelectorAll("[data-route-target]");
+  const panels = document.querySelectorAll("[data-route-panel]");
+  if (!buttons.length || !panels.length) return;
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activateRoute(button.getAttribute("data-route-target"));
+    });
+  });
+}
+
+function applyRoleFromQuery() {
+  const params = new URLSearchParams(window.location.search);
+  const rawRole = params.get("role");
+  if (!rawRole) return;
+
+  const mapping = {
+    nieuw: "nieuw",
+    new: "nieuw",
+    bekend: "bekend",
+    known: "bekend",
+    supervisor: "supervisor",
+    coordinator: "coordinator",
+    coordinatoren: "coordinator",
+    coordinatie: "coordinator",
+  };
+
+  const target = mapping[rawRole.toLowerCase()];
+  if (target) {
+    activateRoute(target);
+  }
+}
+
 renderUpdateFeed();
-wireRoutes();
 renderNoticeFeed();
+renderWorkOrderFeed();
+wireRoutes();
+applyRoleFromQuery();
