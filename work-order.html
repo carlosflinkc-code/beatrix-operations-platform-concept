@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live Work Order | Beatrix Operations Platform</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
   <body class="ops-body" data-page-protection="workorder">
@@ -66,25 +60,59 @@
       </section>
 
       <div data-protected-content>
-        <section class="hero-slab compact-hero">
-          <div class="hero-copy-block">
-            <p class="eyebrow">Afgeschermde workspace</p>
-            <h1>De volledige Daily Work Order, maar dan live, rolgericht en direct updatebaar.</h1>
-            <p class="lead">
-              De huidige work order is inhoudelijk sterk, maar operationeel te statisch. Deze workspace laat zien hoe dezelfde bron vanaf publicatie live wordt: op telefoon, tablet en laptop, met versiebeheer, gerichte meldingen en een volwaardige Debras-, keuken-, spoelkeuken-, kelder- en inhuurlaag.
-            </p>
-            <div class="pill-row">
-              <span class="pill stable">Status: firm / definitive</span>
-              <span class="pill operational">33 pagina's vertaald naar live blokken</span>
-              <span class="pill critical">Laatste voorbeeldwijziging: 13:40</span>
+        <section class="intro-strip">
+          <div class="intro-block">
+            <div class="intro-label">Event</div>
+            <div class="intro-value">KNMP Voorjaarscongres 2026 - Infectieziekten</div>
+          </div>
+          <div class="intro-sep"></div>
+          <div class="intro-block">
+            <div class="intro-label">Datum</div>
+            <div class="intro-value">10 maart 2026</div>
+          </div>
+          <div class="intro-sep"></div>
+          <div class="intro-block">
+            <div class="intro-label">Status</div>
+            <div class="intro-value">Firm / Definite</div>
+          </div>
+          <div class="intro-sep"></div>
+          <div class="intro-block">
+            <div class="intro-label">Gasten</div>
+            <div class="intro-value">1.410</div>
+          </div>
+          <div class="intro-sep"></div>
+          <div class="intro-block">
+            <div class="intro-label">Coördinator</div>
+            <div class="intro-value">Noah Geritsen</div>
+          </div>
+        </section>
+
+        <section class="root-card">
+          <div class="root-left">
+            <div class="root-icon">DWO</div>
+            <div>
+              <div class="root-title">Live Work Order</div>
+              <div class="root-subtitle">Digitale structuurboom van de Daily Work Order met live publicatie, roltoegang en operationele lagen</div>
             </div>
           </div>
-          <aside class="side-highlight">
-            <img class="feature-photo" src="./assets/media/expozaal-official.jpg" alt="Expozaal Jaarbeurs" />
-            <span class="highlight-label">Voorbeeld-event</span>
-            <strong>KNMP Voorjaarscongres 2026 - Infectieziekten</strong>
-            <p>10 maart 2026 · KNMP Holding B.V. · 1.410 gasten · Beatrix Theater, Expozijde, Mies Bouwman Foyer en Jaarbeurs Meetup-zalen.</p>
-          </aside>
+          <div class="root-meta">
+            <div class="meta-chip">
+              <div class="meta-chip-val">33</div>
+              <div class="meta-chip-lbl">Pagina's</div>
+            </div>
+            <div class="meta-chip">
+              <div class="meta-chip-val">7</div>
+              <div class="meta-chip-lbl">Orderblokken</div>
+            </div>
+            <div class="meta-chip">
+              <div class="meta-chip-val">14</div>
+              <div class="meta-chip-lbl">Ruimtes</div>
+            </div>
+            <div class="meta-chip">
+              <div class="meta-chip-val">Live</div>
+              <div class="meta-chip-lbl">Distributie</div>
+            </div>
+          </div>
         </section>
 
         <section class="workspace-shell">
@@ -110,14 +138,17 @@
             <a class="pill" href="#live-dispatch">Live dispatch</a>
           </nav>
 
-          <section id="order-structuur" class="workspace-panel">
-            <div class="workspace-toolbar compact">
-              <div>
+          <details id="order-structuur" class="ia-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
                 <span class="metric-label">Daily Work Order opgedeeld</span>
-                <h3>De echte orderstructuur, digitaal teruggezet onder klikbare hoofdkoppen</h3>
+                <h3 class="ia-title">De echte orderstructuur, digitaal teruggezet onder klikbare hoofdkoppen</h3>
+                <p class="ia-desc">Klik op een sectie om de onderliggende orderinhoud te openen.</p>
               </div>
-            </div>
-            <div class="order-outline">
+              <span class="ia-count">7 blokken</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-outline">
               <a class="related-link" href="#order-algemeen">
                 <strong>Algemene eventlaag</strong>
                 <span>Event, contactpersonen, doelgroep, doelstelling en aanvullende informatie.</span>
@@ -147,14 +178,18 @@
                 <span>Aparte interne order in Mies Bouwman Foyer met contactpersonen en lunchpakket.</span>
               </a>
             </div>
-          </section>
+          </details>
 
-          <section id="order-algemeen" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">01 · Algemene eventlaag</span>
-              <h3>Exacte basis uit de Daily Work Order</h3>
-            </div>
-            <div class="order-text">
+          <details id="order-algemeen" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">01 · Algemene eventlaag</span>
+                <h3 class="ia-title">Exacte basis uit de Daily Work Order</h3>
+              </div>
+              <span class="ia-count">Eventkern</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-text">
               <p><strong>Event:</strong> KNMP - Voorjaarscongres 2026 - Infectieziekten (43512) (J9120) · Firm/Definite</p>
               <p><strong>Bedrijf:</strong> KNMP Holding B.V. · <strong>Aantal gasten:</strong> 1.410</p>
               <p><strong>Contactpersoon:</strong> Mine Lakbir-Demirbag · +316 27 10 11 15</p>
@@ -166,14 +201,18 @@
               </p>
               <p><strong>Signage:</strong> Beatrix Theater: KNMP Voorjaarscongres</p>
             </div>
-          </section>
+          </details>
 
-          <section id="order-workshops" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">02 · Lunchworkshops</span>
-              <h3>114-E, 117-E, 214-C en 215-E</h3>
-            </div>
-            <div class="order-split">
+          <details id="order-workshops" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">02 · Lunchworkshops</span>
+                <h3 class="ia-title">114-E, 117-E, 214-C en 215-E</h3>
+              </div>
+              <span class="ia-count">4 zalen</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-split">
               <article class="order-card">
                 <h4>114-E Jaarbeurs Meetup · 55 personen</h4>
                 <div class="order-text">
@@ -212,14 +251,18 @@
                 </div>
               </article>
             </div>
-          </section>
+          </details>
 
-          <section id="order-centrale-hal" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">03 · Centrale Hal & registratie</span>
-              <h3>Opbouw, registratie, beveiliging, garderobe en Ramadan To Go</h3>
-            </div>
-            <div class="order-split">
+          <details id="order-centrale-hal" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">03 · Centrale Hal & registratie</span>
+                <h3 class="ia-title">Opbouw, registratie, beveiliging, garderobe en Ramadan To Go</h3>
+              </div>
+              <span class="ia-count">4 onderdelen</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-split">
               <article class="order-card">
                 <h4>Centrale Hal Begane Grond · 0070</h4>
                 <div class="order-text">
@@ -254,14 +297,18 @@
                 </div>
               </article>
             </div>
-          </section>
+          </details>
 
-          <section id="order-theater" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">04 · Beatrix Theater</span>
-              <h3>AV, internet, externe techniek en programma</h3>
-            </div>
-            <div class="order-split">
+          <details id="order-theater" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">04 · Beatrix Theater</span>
+                <h3 class="ia-title">AV, internet, externe techniek en programma</h3>
+              </div>
+              <span class="ia-count">4 onderdelen</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-split">
               <article class="order-card">
                 <h4>AV en theatertechniek</h4>
                 <div class="order-text">
@@ -296,14 +343,18 @@
                 </div>
               </article>
             </div>
-          </section>
+          </details>
 
-          <section id="order-expo" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">05 · Expozaal</span>
-              <h3>Expositie, catering, lunch, walking dinner, dranken en afbouw</h3>
-            </div>
-            <div class="order-split">
+          <details id="order-expo" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">05 · Expozaal</span>
+                <h3 class="ia-title">Expositie, catering, lunch, walking dinner, dranken en afbouw</h3>
+              </div>
+              <span class="ia-count">4 onderdelen</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-split">
               <article class="order-card">
                 <h4>Opbouw en basislogistiek</h4>
                 <div class="order-text">
@@ -339,14 +390,18 @@
                 </div>
               </article>
             </div>
-          </section>
+          </details>
 
-          <section id="order-expo-kantoor" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">06 · Expo Kantoor & EHBO</span>
-              <h3>Ondersteunende ruimten uit de order</h3>
-            </div>
-            <div class="order-split">
+          <details id="order-expo-kantoor" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">06 · Expo Kantoor & EHBO</span>
+                <h3 class="ia-title">Ondersteunende ruimten uit de order</h3>
+              </div>
+              <span class="ia-count">2 onderdelen</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-split">
               <article class="order-card">
                 <h4>Expo Kantoor · 1309</h4>
                 <div class="order-text">
@@ -362,20 +417,24 @@
                 </div>
               </article>
             </div>
-          </section>
+          </details>
 
-          <section id="order-technici" class="order-section">
-            <div class="order-section-header">
-              <span class="metric-label">07 · Aparte interne order</span>
-              <h3>Lunch technici 2026 in Mies Bouwman Foyer</h3>
-            </div>
-            <div class="order-text">
+          <details id="order-technici" class="ia-section order-section" open>
+            <summary class="ia-summary">
+              <div class="ia-summary-main">
+                <span class="metric-label">07 · Aparte interne order</span>
+                <h3 class="ia-title">Lunch technici 2026 in Mies Bouwman Foyer</h3>
+              </div>
+              <span class="ia-count">Sub-event</span>
+              <span class="ia-chevron">›</span>
+            </summary>
+            <div class="ia-body order-text">
               <p><strong>Event:</strong> Lunch Technici 2026 (63880) · Internal (New)</p>
               <p><strong>Bedrijf:</strong> Jaarbeurs B.V. · <strong>Contactpersoon:</strong> de heer Riko R. van Middendorp · <strong>Event Manager:</strong> de heer Sander Boef</p>
               <p><strong>Locatie:</strong> Mies Bouwman Foyer (Beatrix Theater) 1201</p>
               <p>12:00 - 13:00 Lunch technici · 3 EA Kitchen - Bread - BX · Lunchpakket crew (K), inclusief drie belegde broodjes, krentenbol, handfruit en jus d'orange.</p>
             </div>
-          </section>
+          </details>
 
           <section id="event-snapshot" class="workspace-grid">
             <article class="workspace-panel workspace-panel-strong">
