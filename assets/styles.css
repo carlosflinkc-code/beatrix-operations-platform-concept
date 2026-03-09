@@ -1847,11 +1847,29 @@ h3 {
   margin-top: 18px;
 }
 
+.access-gate-links-inline {
+  margin-top: 16px;
+}
+
 .protected-content.is-locked {
   position: relative;
   filter: blur(10px);
   pointer-events: none;
   user-select: none;
+}
+
+.public-escape-bar {
+  margin: 0 0 24px;
+  padding: 18px 20px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.06), rgba(18, 28, 36, 0.98));
+  box-shadow: var(--shadow);
+}
+
+.public-escape-bar p {
+  margin: 0 0 12px;
+  color: #dce6ee;
 }
 
 .workspace-shell {

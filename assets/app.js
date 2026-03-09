@@ -355,6 +355,12 @@ function createAccessModal() {
         <button class="button button-primary" type="button" data-access-submit>Toegang geven</button>
         <button class="button button-secondary" type="button" data-access-cancel>Annuleren</button>
       </div>
+      <div class="access-gate-links access-gate-links-inline">
+        <a class="button button-secondary" href="./index.html">Terug naar home</a>
+        <a class="button button-secondary" href="./briefing.html">Open dagbriefing</a>
+        <a class="button button-secondary" href="./materials.html">Open materialen</a>
+        <a class="button button-secondary" href="./app.html?role=nieuw">Open medewerkerroute</a>
+      </div>
     </div>
   `;
   document.body.appendChild(modal);
