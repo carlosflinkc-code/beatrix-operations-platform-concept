@@ -27,20 +27,21 @@ Deze bundle is bedoeld voor externe beoordeling wanneer de publieke GitHub Pages
 - Scope: uitsluitend Beatrixgebouw.
 - Voorbeeld-event: KNMP Voorjaarscongres, dinsdag 10 maart 2026.
 - Coördinatornaam: Noah Geritsen.
+- Extra rollen in de app: eerste medewerker en event host.
 - Kritieke functionele lijn:
   - van geprinte Daily Work Order naar live work order
   - rolgestuurde toegang
   - onboarding voor nieuwe medewerkers
   - Debras als volwaardige discipline
   - visuele materiaalbibliotheek met alle 18 beelden uit het handboek
+  - live work order met Debras, keuken, spoelkeuken, kelder en inhuur in dezelfde bron
 
-## Huidige demo-PINs
+## Huidige demo-PIN
 
-- Supervisor: `2406`
-- Assistent-supervisor: `2407`
-- Coördinator: `2408`
+- Gedeelde demo-PIN voor afgeschermde lagen: `17102000EXP`
+- Visueel op scherm getoond als: `1710 2000 EXP`
 
-De work-orderlaag accepteert supervisor, assistent-supervisor of coördinator.
+De work-orderlaag accepteert supervisor, assistent-supervisor of coördinator, maar gebruikt in de demo dezelfde PIN-flow.
 
 ## Waar Claude scherp op moet zijn
 
@@ -48,6 +49,8 @@ De work-orderlaag accepteert supervisor, assistent-supervisor of coördinator.
 - clickflow en doorklikbaarheid
 - homepage-hiërarchie en overtuigingskracht
 - rolafscherming en UX van de PIN-flow
+- live-work-orderstructuur en diepgang van de vertaalslag uit de PDF
+- kwaliteit van de gerichte notificatielogica per rol
 - taalniveau en professionaliteit
 - visuele rust en consistentie
 - of de Daily Work Order nog dieper vertaald moet worden naar het platform

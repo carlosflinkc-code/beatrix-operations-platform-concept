@@ -41,41 +41,245 @@
 
     <main class="page-shell">
       <section class="scope-banner scope-banner-strong">
-        Coördinatorlaag voor publicatie, versiebeheer, ontvangstcontrole en audit trail. Voorbeeldcoördinator: Noah Geritsen.
+        Coördinatorcockpit voor publicatie, named contacts, ontvangstcontrole, inhuur, materiaalstatus, Debras-regie en audit trail. Voorbeeldcoördinator: Noah Geritsen.
       </section>
+
+      <nav class="breadcrumb">
+        <a href="./index.html">Demo</a>
+        <span>/</span>
+        <a href="./website.html">Portal</a>
+        <span>/</span>
+        <span>Coördinator</span>
+      </nav>
 
       <div data-protected-content>
-      <section class="hero-slab compact-hero">
-        <div class="hero-copy-block">
-          <p class="eyebrow">Route 4</p>
-          <h1>De coördinatorlaag bestuurt wat live gaat en wat afgeschermd blijft.</h1>
-          <p class="lead">
-            Dit is de plek voor informatie die niet naar medewerkers of nieuwe krachten hoeft: leveranciersstatus, manco-risico, schade,
-            versiepublicatie, audit trail en escalaties.
-          </p>
-        </div>
-        <aside class="side-highlight">
-          <img class="feature-photo" src="./assets/media/beatrixgebouw-official.jpg" alt="Beatrixgebouw Jaarbeurs" />
-          <span class="highlight-label">Need-to-know</span>
-          <strong>Bewuste afscherming</strong>
-          <p>Nieuwe medewerkers hebben niets aan deze laag. Coördinatie juist alles.</p>
-        </aside>
-      </section>
+        <section class="hero-slab compact-hero">
+          <div class="hero-copy-block">
+            <p class="eyebrow">Coördinatorcockpit</p>
+            <h1>Hier wordt de work order gepubliceerd, bewaakt en opgesplitst per rol.</h1>
+            <p class="lead">
+              Dit is Noahs laag: de plek waar planning, boekingen, named contacts, leveranciers, materiaalstatus, Debras-opstelling, audit trail en pushdistributie samenkomen. Niet alles wordt voor iedereen zichtbaar; juist hier wordt bepaald wie wat ontvangt.
+            </p>
+            <div class="pill-row">
+              <span class="pill stable">Eigenaar: Noah Geritsen</span>
+              <span class="pill operational">Event manager: Kelly van der Velden</span>
+              <span class="pill">Klantcontact: Mine Lakbir-Demirbag</span>
+            </div>
+          </div>
+          <aside class="side-highlight">
+            <img class="feature-photo" src="./assets/media/beatrixgebouw-official.jpg" alt="Beatrixgebouw Jaarbeurs" />
+            <span class="highlight-label">Need-to-know</span>
+            <strong>Regie in plaats van rondbellen</strong>
+            <p>Vanuit deze laag kan een wijziging direct live worden gezet naar de juiste personen, zonder nieuwe PDF en zonder extra telefoonrondes.</p>
+          </aside>
+        </section>
 
-      <section class="coordinator-grid">
-        <article class="coordinator-card">
-          <h3>Wijzigingen publiceren</h3>
-          <p>Vanaf iPad of MacBook direct een wijziging publiceren naar de juiste route in app en portal.</p>
-        </article>
-        <article class="coordinator-card">
-          <h3>Inhuur controleren</h3>
-          <p>Tellen, schade registreren en alleen aftekenen als levering klopt met bestelling en levervorm.</p>
-        </article>
-        <article class="coordinator-card">
-          <h3>Audit trail</h3>
-          <p>Zichtbaar maken wie wat wanneer heeft gewijzigd, geweigerd, bevestigd of vrijgegeven.</p>
-        </article>
-      </section>
+        <section class="workspace-shell">
+          <div class="workspace-toolbar">
+            <div>
+              <p class="eyebrow">Cockpitnavigatie</p>
+              <h2>Besturing van publicatie, logistiek en borging</h2>
+            </div>
+            <div class="pill-row">
+              <span class="pill critical">5 open acties</span>
+              <span class="pill operational">3 rolgerichte updates gereed</span>
+              <span class="pill stable">Ontvangststatus: 92%</span>
+            </div>
+          </div>
+
+          <section class="workspace-grid">
+            <article class="workspace-panel workspace-panel-strong">
+              <span class="metric-label">Publicatiecentrum</span>
+              <h3>Wat Noah in één handomdraai beheert</h3>
+              <ul class="stack-list">
+                <li>Daily Work Order publiceren, versie opslaan en live zetten.</li>
+                <li>Wijzigingen gericht versturen naar eerste medewerkers, event hosts, keuken, spoelkeuken, supervisor of assistent-supervisor.</li>
+                <li>Per wijziging bepalen: wat, waar, voor wie, wat nu doen, push ja of nee.</li>
+                <li>Audit trail vastleggen: wie wijzigde wat en wie heeft het gelezen.</li>
+              </ul>
+            </article>
+
+            <article class="workspace-panel">
+              <span class="metric-label">Named contacts</span>
+              <h3>Contacten worden distributiegroepen</h3>
+              <div class="contact-grid compact-grid">
+                <article class="contact-card">
+                  <h4>Kelly van der Velden</h4>
+                  <p>Event manager. Mag operationele wijzigingen publiceren vanaf mobiel of laptop.</p>
+                </article>
+                <article class="contact-card">
+                  <h4>Mine Lakbir-Demirbag</h4>
+                  <p>Klantcontact. Ziet executive updates en hospitality-afspraken.</p>
+                </article>
+                <article class="contact-card">
+                  <h4>Myriam Wijnen</h4>
+                  <p>Beveiliging / badgecontrole. Ontvangt alleen toegangs- en deurwijzigingen.</p>
+                </article>
+                <article class="contact-card">
+                  <h4>Paul Barendregt</h4>
+                  <p>Videograaf. Alleen AV- en theaterrelevante wijzigingen.</p>
+                </article>
+              </div>
+            </article>
+          </section>
+
+          <section class="workspace-grid">
+            <article class="workspace-panel">
+              <span class="metric-label">Planningen &amp; boekingen</span>
+              <h3>Wat de coördinator direct overziet</h3>
+              <table class="access-table">
+                <thead>
+                  <tr>
+                    <th>Blok</th>
+                    <th>Status</th>
+                    <th>Eigenaar</th>
+                    <th>Opmerking</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Registratie Centrale Hal</td>
+                    <td>Live</td>
+                    <td>Planning / Event hosts</td>
+                    <td>Balies, room dividers, infostandaards en beveiliging gereed vóór 06:30.</td>
+                  </tr>
+                  <tr>
+                    <td>Lunchworkshops 114 / 117 / 214 / 215</td>
+                    <td>Live</td>
+                    <td>Kitchen Cold / Catering Operations</td>
+                    <td>Buffetten, borden, dranken, tafellinnen en hostess-inzet bevestigd.</td>
+                  </tr>
+                  <tr>
+                    <td>Beatrix Theater plenair</td>
+                    <td>Kritiek</td>
+                    <td>AV / Theater / Coördinatie</td>
+                    <td>Projectie, monitors, videograaflijn en backstage-zitje volgen theaterlogica.</td>
+                  </tr>
+                  <tr>
+                    <td>Ramadan To Go</td>
+                    <td>Nieuw</td>
+                    <td>Keuken / ExpoKantoor</td>
+                    <td>Uitgifte en hospitality om 18:30 voor Mine Lakbir-Demirbag.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+
+            <article class="workspace-panel">
+              <span class="metric-label">Ontvangst &amp; inhuur</span>
+              <h3>Geen levering zonder telcontrole</h3>
+              <ul class="stack-list">
+                <li>Geordend aanleveren, tellen, vergelijken met bestelling en daarna pas aftekenen.</li>
+                <li>Kriskras levering van inhuurmaterialen wordt geweigerd of als afwijking gelogd.</li>
+                <li>Schade, manco en ontbrekende aantallen worden gekoppeld aan leverancier en tijdstip.</li>
+                <li>Jaarbeurs-eigen middelen en ingehuurde middelen blijven in de cockpit expliciet gescheiden.</li>
+              </ul>
+              <a class="button button-secondary" href="./receiving.html">Open ontvangst &amp; inhuur</a>
+            </article>
+          </section>
+
+          <section class="workspace-grid">
+            <article class="workspace-panel workspace-panel-strong">
+              <span class="metric-label">Debras-control tower</span>
+              <h3>Debras, keuken, spoelkeuken en kelder in één regielaag</h3>
+              <div class="dispatch-grid">
+                <div class="dispatch-card">
+                  <strong>Debras-zone</strong>
+                  <p>Liftzone Expo / Mies. Vrijhouden, scheiden, direct afvoeren en lege buffer klaarzetten.</p>
+                </div>
+                <div class="dispatch-card">
+                  <strong>Spoelkeuken</strong>
+                  <p>Capaciteit, kratwissel, glaslijnen en piekdruk na lunch en theaterblokken.</p>
+                </div>
+                <div class="dispatch-card">
+                  <strong>Kelder / logistiek</strong>
+                  <p>Voorraad, transport, lekbakken, rolcontainers en afwijkingen tussen bestelling en realiteit.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="workspace-panel">
+              <span class="metric-label">Middelenstatus</span>
+              <h3>Voorbeeldcontrolestaat voor deze partij</h3>
+              <table class="access-table">
+                <thead>
+                  <tr>
+                    <th>Middel</th>
+                    <th>Status</th>
+                    <th>Bron</th>
+                    <th>Actie</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Rolcontainers</td>
+                    <td>10 beschikbaar / 2 extra nodig</td>
+                    <td>Jaarbeurs + back-up inhuur</td>
+                    <td>Extra set reserveren vóór lunchpiek.</td>
+                  </tr>
+                  <tr>
+                    <td>GFT-bakken</td>
+                    <td>8 gereed / 2 open</td>
+                    <td>Jaarbeurs</td>
+                    <td>Kelderlogistiek vult aan vóór 10:30.</td>
+                  </tr>
+                  <tr>
+                    <td>Glasbakken</td>
+                    <td>Gereed</td>
+                    <td>Jaarbeurs</td>
+                    <td>Verdelen over liftzone en theaterretour.</td>
+                  </tr>
+                  <tr>
+                    <td>Lekbakken</td>
+                    <td>Controle open</td>
+                    <td>Jaarbeurs</td>
+                    <td>Supervisor bevestigt aantal in spoelkeuken.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </article>
+          </section>
+
+          <section class="workspace-grid">
+            <article class="workspace-panel">
+              <span class="metric-label">Gerichte meldingen</span>
+              <h3>Waarom dit niet voelt als een groepsapp</h3>
+              <div class="flow-grid">
+                <div class="flow-step">
+                  <strong>Event hosts</strong>
+                  <p>Krijgen badgecontrole, routing en deurstatus. Geen keuken- of leveranciersruis.</p>
+                </div>
+                <div class="flow-step">
+                  <strong>Eerste medewerkers</strong>
+                  <p>Krijgen alleen opbouw, liftcheck, kratbuffer en eerste gereedmeldingen.</p>
+                </div>
+                <div class="flow-step">
+                  <strong>Keuken / spoelkeuken</strong>
+                  <p>Krijgen menu, retourdruk, buffetlogica, GFT en glaslijnen.</p>
+                </div>
+              </div>
+            </article>
+
+            <article class="workspace-panel">
+              <span class="metric-label">Audit trail</span>
+              <h3>Voorbeeldlogboek</h3>
+              <div class="audit-list">
+                <article class="audit-item">
+                  <strong>13:40 · Kelly van der Velden publiceert routingwijziging</strong>
+                  <p>Ontvangers: bekende medewerkers, event hosts, supervisor, assistent-supervisor, coördinator.</p>
+                </article>
+                <article class="audit-item">
+                  <strong>10:28 · Noah Geritsen verhoogt spoel- en GFT-capaciteit</strong>
+                  <p>Ontvangers: keuken, spoelkeuken, supervisor, assistent-supervisor, coördinator.</p>
+                </article>
+                <article class="audit-item">
+                  <strong>05:12 · Eerste ploeg start op Centrale Hal bevestigd</strong>
+                  <p>Ontvangers: eerste medewerkers, supervisor en assistent-supervisor.</p>
+                </article>
+              </div>
+            </article>
+          </section>
+        </section>
       </div>
     </main>
 

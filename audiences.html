@@ -41,7 +41,7 @@
 
     <main class="page-shell">
       <section class="scope-banner">
-        Niet iedereen krijgt dezelfde informatie. Deze pagina laat zien hoe het platform per rol wordt afgeschermd en gedeeld.
+        Niet iedereen krijgt dezelfde informatie. Deze pagina laat zien hoe het platform per rol wordt afgeschermd, gedeeld en live bijgewerkt.
       </section>
 
       <nav class="breadcrumb">
@@ -53,47 +53,58 @@
       <section class="hero-slab compact-hero">
         <div class="hero-copy-block">
           <p class="eyebrow">Need-to-know architectuur</p>
-          <h1>De juiste link moet de juiste informatie tonen, en niet meer dan dat.</h1>
+          <h1>De juiste link toont de juiste informatie, en niets daarbuiten.</h1>
           <p class="lead">
-            Dat betekent concreet: geen volledige supervisorinformatie voor nieuwe medewerkers, geen leveranciersdetails voor floormedewerkers
-            en geen onnodige overload voor mensen die alleen hoeven te weten waar ze werken en wat vandaag anders is.
+            Dat betekent concreet: geen volledige work order voor nieuwe medewerkers, geen keuken- en spoellogica voor event hosts, geen leveranciersdetails voor floormedewerkers en geen notificatieruis voor mensen die alleen hun eigen taak hoeven uit te voeren.
           </p>
         </div>
         <aside class="side-highlight">
           <img class="feature-photo" src="./assets/media/mies-bouwman-official.jpg" alt="Mies Bouwman Foyer Jaarbeurs" />
           <span class="highlight-label">Deelmodel</span>
-          <strong>Aparte links per route</strong>
-          <p>In deze demo wordt dat getoond met rol-specifieke app-links en aparte beheerpagina’s.</p>
+          <strong>Rol-links in plaats van massadistributie</strong>
+          <p>De demo laat zien hoe je per rol een andere link of toegangspoort geeft, terwijl alle data uit dezelfde live bron komt.</p>
         </aside>
       </section>
 
       <section class="role-grid">
         <article class="role-card">
           <span class="metric-label">Route 1</span>
-          <h3>Nieuwe medewerker</h3>
-          <p>Locatie, onboarding, Debras-basis, gangpadregels, materiaalherkenning, afvalscheiding en checkvragen.</p>
-          <a class="button button-secondary" href="./app.html?role=nieuw">Deel medewerker-link</a>
+          <h3>Eerste medewerker</h3>
+          <p>Vroege opbouw, registratie, eerste liftcheck, Dienbladen-startset, lege kratbuffer en eerste zaalgereedheid.</p>
+          <a class="button button-secondary" href="./app.html?role=eerste">Deel eerste-medewerkerlink</a>
         </article>
         <article class="role-card">
           <span class="metric-label">Route 2</span>
-          <h3>Bekende medewerker</h3>
-          <p>Wat vandaag anders is, routing, materiaalfocus, uitzonderingen en de relevante live wijzigingen.</p>
-          <a class="button button-secondary" href="./app.html?role=bekend">Deel ervaren-link</a>
+          <h3>Nieuwe medewerker</h3>
+          <p>Locatie, onboarding, Debras-basis, gangpadregels, materiaalherkenning, afvalscheiding en checkvragen.</p>
+          <a class="button button-secondary" href="./app.html?role=nieuw">Deel medewerkerlink</a>
         </article>
         <article class="role-card">
           <span class="metric-label">Route 3</span>
-          <h3>Supervisor</h3>
-          <p>Piekmomenten, personeelslogica, Debras-doorstroming, liftzonecontrole en controlepunten per tijdsblok.</p>
-          <a class="button button-secondary" href="./app.html?role=supervisor">Deel supervisor-link</a>
+          <h3>Bekende medewerker</h3>
+          <p>Wat vandaag anders is, routing, materiaalfocus, uitzonderingen en de relevante live wijzigingen.</p>
+          <a class="button button-secondary" href="./app.html?role=bekend">Deel ervaren link</a>
         </article>
         <article class="role-card">
           <span class="metric-label">Route 4</span>
+          <h3>Event host</h3>
+          <p>Registratie, badgecontrole, gastenstroom, entreeflow, zaalrouting en escaleren buiten eigen scope.</p>
+          <a class="button button-secondary" href="./app.html?role=eventhost">Deel event host-link</a>
+        </article>
+        <article class="role-card">
+          <span class="metric-label">Route 5</span>
+          <h3>Supervisor</h3>
+          <p>Piekmomenten, personeelslogica, Debras-doorstroming, spoelkeuken, keuken, kelder en controlepunten per tijdsblok.</p>
+          <a class="button button-secondary" href="./app.html?role=supervisor">Deel supervisor-link</a>
+        </article>
+        <article class="role-card">
+          <span class="metric-label">Route 6</span>
           <h3>Assistent-supervisor</h3>
           <p>Ondersteunt zaalwisselingen, onboarding, materiaalcontrole en snelle operationele correcties op de vloer.</p>
           <a class="button button-secondary" href="./app.html?role=assistant">Deel assistent-link</a>
         </article>
         <article class="role-card highlight">
-          <span class="metric-label">Route 5</span>
+          <span class="metric-label">Route 7</span>
           <h3>Coördinator</h3>
           <p>Publicatie, leverancierscontrole, ontvangst, schade, manco-risico, escalaties en versiebeheer.</p>
           <a class="button button-primary" href="./coordinator.html" data-protected-role="coordinator">Open coördinatorlaag</a>
@@ -105,8 +116,10 @@
           <thead>
             <tr>
               <th>Onderwerp</th>
+              <th>Eerste medewerker</th>
               <th>Nieuwe medewerker</th>
               <th>Bekende medewerker</th>
+              <th>Event host</th>
               <th>Supervisor</th>
               <th>Assistent-supervisor</th>
               <th>Coördinator</th>
@@ -120,19 +133,35 @@
               <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
             </tr>
             <tr>
               <td>Onboarding en checkvragen</td>
+              <td>Beperkt</td>
               <td>Ja</td>
+              <td>Nee</td>
               <td>Nee</td>
               <td>Beperkt</td>
               <td>Beperkt</td>
               <td>Nee</td>
             </tr>
             <tr>
-              <td>Piekmomenten en inzetplanning</td>
+              <td>Badgecontrole en gastenstroom</td>
+              <td>Nee</td>
               <td>Nee</td>
               <td>Beperkt</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
+              <td>Keuken, spoelkeuken en kelder</td>
+              <td>Beperkt</td>
+              <td>Nee</td>
+              <td>Nee</td>
+              <td>Nee</td>
               <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
@@ -141,12 +170,16 @@
               <td>Ontvangst en inhuur</td>
               <td>Nee</td>
               <td>Nee</td>
+              <td>Nee</td>
+              <td>Nee</td>
               <td>Beperkt</td>
               <td>Beperkt</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>Versiebeheer van work order</td>
+              <td>Nee</td>
+              <td>Nee</td>
               <td>Nee</td>
               <td>Nee</td>
               <td>Nee</td>

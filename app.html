@@ -41,7 +41,7 @@
 
     <main class="page-shell">
       <section class="scope-banner">
-        Deze appbriefing geldt uitsluitend voor werkzaamheden in het Beatrixgebouw. Deel per gebruiker alleen de route die relevant is.
+        Deze appbriefing geldt uitsluitend voor werkzaamheden in het Beatrixgebouw. Iedere gebruiker ziet alleen de route, meldingen en taken die voor die rol relevant zijn.
       </section>
 
       <nav class="breadcrumb">
@@ -53,64 +53,73 @@
       <section class="hero-slab compact-hero">
         <div class="hero-copy-block">
           <p class="eyebrow">Mobiele vloerlaag</p>
-          <h1>De app toont niet alles aan iedereen, maar alleen wat nu nodig is.</h1>
+          <h1>Iedereen heeft de partij in zijn zak, zonder dat iedereen alles ziet.</h1>
           <p class="lead">
-            Deze app is de uitvoeringslaag van de digitale work order. De bron zit in het portal; de app vertaalt die bron naar gerichte
-            schermen voor nieuwe medewerkers, bekende medewerkers, supervisor, assistent-supervisor en coördinatie.
+            De app is geen verkleinde PDF en ook geen groepsapp. De bron zit in de live work order; de app vertaalt die bron naar gerichte routes voor eerste medewerkers, nieuwe medewerkers, bekende medewerkers, event hosts, supervisor, assistent-supervisor en coördinatie.
           </p>
           <div class="route-banner" data-role-badge>Rolkeuze vereist</div>
         </div>
         <aside class="side-highlight">
           <img class="feature-photo" src="./assets/media/mies-bouwman-official.jpg" alt="Mies Bouwman Foyer Jaarbeurs" />
-          <span class="highlight-label">Delen</span>
-          <strong>Gebruik rol-specifieke links</strong>
-          <p>Bijvoorbeeld `?role=nieuw` of `?role=assistant`, zodat de gebruiker direct in de juiste route landt.</p>
+          <span class="highlight-label">Gerichte distributie</span>
+          <strong>Wel WhatsApp-snel, niet WhatsApp-chaotisch</strong>
+          <p>Alleen de mensen voor wie een wijziging relevant is krijgen een pushmelding. Een keukenwijziging gaat dus niet naar event hosts of eerste medewerkers.</p>
         </aside>
       </section>
 
       <section class="app-showcase">
         <article class="phone-card">
           <div class="phone-topline">
-            <span>09:41</span>
+            <span>05:42</span>
             <span>Beatrix</span>
-            <span>5G</span>
+            <span>Live</span>
           </div>
           <div class="phone-section">
             <p class="eyebrow">Startscherm</p>
             <h3>KNMP Voorjaarscongres 2026</h3>
-            <p>10 maart 2026 · Beatrixgebouw · Expozaal / Mies Bouwman Foyer / 114-E</p>
+            <p>10 maart 2026 · Beatrix Theater · Expozaal · Mies Bouwman Foyer · Jaarbeurs Meetup</p>
             <p class="scope-inline">Alleen geldig voor werk in het Beatrixgebouw.</p>
           </div>
           <div class="phone-section">
-            <span class="phone-chip">Dagbriefing live</span>
-            <span class="phone-chip alert">3 updates actief</span>
+            <span class="phone-chip">Work order live</span>
+            <span class="phone-chip alert">5 doelgroep-updates actief</span>
           </div>
         </article>
 
         <article class="phone-card">
           <div class="phone-topline">
-            <span>09:42</span>
+            <span>05:43</span>
             <span>Routekeuze</span>
-            <span>Live</span>
+            <span>Rol</span>
           </div>
           <div class="phone-section">
             <p class="eyebrow">Kies jouw route</p>
             <div class="route-switcher">
-              <button class="route-button is-active" data-route-target="nieuw">Nieuw</button>
+              <button class="route-button is-active" data-route-target="eerste">Eerste medewerker</button>
+              <button class="route-button" data-route-target="nieuw">Nieuw</button>
               <button class="route-button" data-route-target="bekend">Bekend</button>
+              <button class="route-button" data-route-target="eventhost">Event host</button>
               <button class="route-button" data-route-target="supervisor" data-protected-role="supervisor">Supervisor</button>
               <button class="route-button" data-route-target="assistant" data-protected-role="assistant">Assistent-supervisor</button>
               <button class="route-button" data-route-target="coordinator" data-protected-role="coordinator">Coördinator</button>
             </div>
           </div>
-          <div class="phone-section route-panel is-visible" data-route-panel="nieuw">
+          <div class="phone-section route-panel is-visible" data-route-panel="eerste">
+            <strong>Eerste medewerker</strong>
+            <ol class="step-list">
+              <li>Meldpunt en starttijd voor opbouw</li>
+              <li>Registratie, liften en eerste zaalcheck</li>
+              <li>Dienbladen, kratten en lege buffer klaarzetten</li>
+              <li>Looplijnen vrijhouden vóór instroom</li>
+            </ol>
+          </div>
+          <div class="phone-section route-panel" data-route-panel="nieuw">
             <strong>Nieuwe medewerker</strong>
             <ol class="step-list">
               <li>Waar werk je vandaag</li>
               <li>Wat is het Beatrixgebouw</li>
-              <li>Liften en Debras-zone</li>
-              <li>Gangpadregels</li>
-              <li>Materiaal en afvalscheiding</li>
+              <li>Liften, Debras-zone en gangpadregels</li>
+              <li>Materiaalherkenning, afvalscheiding en checkvragen</li>
             </ol>
           </div>
           <div class="phone-section route-panel" data-route-panel="bekend">
@@ -118,35 +127,44 @@
             <ol class="step-list">
               <li>Wat is vandaag anders</li>
               <li>Welke zaal of foyer is gewijzigd</li>
-              <li>Materiaalfocus en routing</li>
-              <li>Live update en actie</li>
+              <li>Materiaalfocus en retourrouting</li>
+              <li>Actieve updates en directe acties</li>
+            </ol>
+          </div>
+          <div class="phone-section route-panel" data-route-panel="eventhost">
+            <strong>Event host</strong>
+            <ol class="step-list">
+              <li>Registratie, badgecontrole en gastenstroom</li>
+              <li>Welke deuren open of dicht zijn</li>
+              <li>Waar lunchworkshops en foyers bereikbaar zijn</li>
+              <li>Escaleren bij afwijkingen, niet zelf oplossen buiten scope</li>
             </ol>
           </div>
           <div class="phone-section route-panel" data-route-panel="supervisor">
             <strong>Supervisor</strong>
             <ol class="step-list">
               <li>Piekmomenten en teamverdeling</li>
-              <li>Debras-doorstroming</li>
-              <li>Liftzone en spoelcontrole</li>
-              <li>Nieuwe medewerkers vrijgeven</li>
+              <li>Debras-doorstroming, liftzone en spoelkeuken</li>
+              <li>Keuken, kelder en inhuur controleren</li>
+              <li>Nieuwe medewerkers en eerste ploeg vrijgeven</li>
             </ol>
           </div>
           <div class="phone-section route-panel" data-route-panel="assistant">
             <strong>Assistent-supervisor</strong>
             <ol class="step-list">
-              <li>Nieuwe medewerkers begeleiden</li>
-              <li>Zaalwisselingen en routing bewaken</li>
-              <li>Dienbladen, kratten en afvalstromen controleren</li>
-              <li>Afwijkingen direct terugmelden</li>
+              <li>Onboarding en vloeruitleg begeleiden</li>
+              <li>Zaalwisselingen, Dienbladen en kratlogica bewaken</li>
+              <li>Afwijkingen terugmelden via gerichte update</li>
+              <li>Geen leveranciers- of publicatierechten</li>
             </ol>
           </div>
           <div class="phone-section route-panel" data-route-panel="coordinator">
             <strong>Coördinator</strong>
             <ol class="step-list">
-              <li>Work order versie</li>
-              <li>Update publiceren</li>
-              <li>Ontvangst en inhuur</li>
-              <li>Audit trail en escalaties</li>
+              <li>Work order publiceren en versiebeheer</li>
+              <li>Ontvangst, inhuur, schade en audit trail</li>
+              <li>Gerichte pushmeldingen per rol en ruimte</li>
+              <li>Totale regie over keuken, spoel, kelder en Debras</li>
             </ol>
           </div>
         </article>
@@ -155,28 +173,41 @@
           <div class="phone-topline">
             <span>13:40</span>
             <span>Push</span>
-            <span>Nu</span>
+            <span>Selectief</span>
           </div>
           <div class="phone-section">
-            <p class="eyebrow">Live update</p>
+            <p class="eyebrow">Gerichte melding</p>
             <div class="phone-alert">
-              <strong>Buffet verplaatst van Expozaal naar Mies Bouwman Foyer</strong>
-              <p>Waar: Level 2 servicegang en foyeropstelling</p>
-              <p>Voor wie: bekende medewerkers, supervisor, assistent-supervisor en coördinator</p>
-              <p>Wat nu doen: routing en glasretour direct aanpassen.</p>
+              <strong>Buffetroute verplaatst naar Mies Bouwman Foyer</strong>
+              <p>Waar: Expozijde, liftzone level 2 en foyeropstelling</p>
+              <p>Voor wie: bekende medewerkers, event hosts, supervisor, assistent-supervisor en coördinator</p>
+              <p>Niet voor: eerste medewerkers, nieuwe medewerkers, keuken-only rollen</p>
             </div>
+          </div>
+          <div class="phone-section">
+            <p class="eyebrow">Waarom dit geen groepsapp is</p>
+            <p class="subtle-note">Een update voor keuken of spoelkeuken gaat niet naar event hosts. Een update voor eerste medewerkers gaat niet naar Gastenservice of AV. De app filtert op rol, ruimte, onderwerp en taak.</p>
           </div>
         </article>
       </section>
 
       <section class="route-grid">
         <article class="route-column">
+          <h3>Eerste medewerker-link</h3>
+          <ul>
+            <li>Vroege opbouw, registratie en eerste zaalstatus</li>
+            <li>Check op liften, lege kratten, GFT en rolcontainers</li>
+            <li>Geen management- of leveranciersinformatie</li>
+            <li><a href="./app.html?role=eerste">Open route</a></li>
+          </ul>
+        </article>
+        <article class="route-column">
           <h3>Nieuwe medewerker-link</h3>
           <ul>
             <li>Gebouwuitleg vóór aankomst</li>
             <li>Visuele materiaalbibliotheek</li>
             <li>Debras in gewone taal</li>
-            <li>Checkvragen voor vrijgave</li>
+            <li><a href="./app.html?role=nieuw">Open route</a></li>
           </ul>
         </article>
         <article class="route-column">
@@ -184,17 +215,26 @@
           <ul>
             <li>Alleen de verschillen van vandaag</li>
             <li>Relevante routing en werkplek</li>
-            <li>Korte updatefeed</li>
-            <li>Geen managementdetails</li>
+            <li>Korte updatefeed zonder managementruis</li>
+            <li><a href="./app.html?role=bekend">Open route</a></li>
+          </ul>
+        </article>
+        <article class="route-column">
+          <h3>Event host-link</h3>
+          <ul>
+            <li>Registratie, badgecontrole en gastflow</li>
+            <li>Front-of-house-informatie, geen keukenlogica</li>
+            <li>Doorverwijzingen per zaal en foyer</li>
+            <li><a href="./app.html?role=eventhost">Open route</a></li>
           </ul>
         </article>
         <article class="route-column">
           <h3>Supervisor-link</h3>
           <ul>
             <li>Controlepunten per tijdsblok</li>
-            <li>Nieuwe medewerkers en vrijgave</li>
-            <li>Debras-doorstroming en liftzone</li>
-            <li>Materialen en afwijkingen</li>
+            <li>Debras, keuken, spoelkeuken en kelder</li>
+            <li>Nieuwe medewerkers en eerste ploeg vrijgeven</li>
+            <li><a href="./supervisor.html" data-protected-role="supervisor">Open supervisorlaag</a></li>
           </ul>
         </article>
         <article class="route-column">
@@ -203,16 +243,16 @@
             <li>Ondersteunt onboarding en zaalwisselingen</li>
             <li>Controleert Dienbladen, glas en kratten</li>
             <li>Bewaakt de uitvoering op de vloer</li>
-            <li>Geen volledige coördinatorinformatie</li>
+            <li><a href="./assistant.html" data-protected-role="assistant">Open assistentlaag</a></li>
           </ul>
         </article>
         <article class="route-column">
           <h3>Coördinator-link</h3>
           <ul>
-            <li>Work order publicatie</li>
-            <li>Ontvangst en inhuur</li>
-            <li>Versiebeheer</li>
-            <li>Audit trail en escalaties</li>
+            <li>Work order publicatie, ontvangst en inhuur</li>
+            <li>Versiebeheer, audit trail en escalaties</li>
+            <li>Gerichte distributie per rol en ruimte</li>
+            <li><a href="./coordinator.html" data-protected-role="coordinator">Open coördinatorlaag</a></li>
           </ul>
         </article>
       </section>

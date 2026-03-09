@@ -1,100 +1,137 @@
+const sharedDemoPin = "17102000EXP";
+const sharedDemoPinLabel = "1710 2000 EXP";
+
 const updates = [
   {
-    what: "Buffet X verplaatst van Expozaal naar Mies Bouwman Foyer",
-    where: "Level 2 servicegang en foyeropstelling",
-    audience: "Bekende medewerkers, supervisor, assistent-supervisor en coördinator",
-    action: "Pas routing, glasretour en uitgiftepunt per direct aan.",
+    what: "Buffetroute verplaatst van Expozaal naar Mies Bouwman Foyer",
+    where: "Expozijde, liftzone level 2 en foyeropstelling",
+    audience: "Bekende medewerkers, event hosts, supervisor, assistent-supervisor en coördinator",
+    action: "Pas looplijn, glasretour en Dienbladen-doorstroom direct aan. Lift B blijft retour-only.",
     time: "13:40",
     highlight: true,
   },
   {
-    what: "Lunchopstelling Jaarbeurs Meetup krijgt extra audiovisuele set",
-    where: "114-E Jaarbeurs Meetup",
-    audience: "Supervisor, assistent-supervisor en coördinator",
-    action: "Controleer stroom, tafelplan en vrij servicepad vóór 14:15.",
-    time: "12:55",
+    what: "Eerste medewerkers melden om 05:45 bij Centrale Hal voor registratie-opbouw",
+    where: "Centrale Hal Begane Grond en registratiebalies",
+    audience: "Eerste medewerkers, supervisor en assistent-supervisor",
+    action: "Check balies, stroom, infostandaards, koorden en eerste briefing voordat publiek binnenkomt.",
+    time: "05:12",
     highlight: false,
   },
   {
-    what: "Nieuwe medewerkers eerst door digitale onboarding vrijgeven",
-    where: "Entree briefingpunt",
-    audience: "Nieuwe medewerkers, supervisor en assistent-supervisor",
-    action: "Laat pas inchecken na afronding van route, checkvragen en materiaalherkenning.",
-    time: "11:20",
+    what: "Lunchworkshops krijgen extra spoelbuffer en extra GFT-capaciteit",
+    where: "114-E, 117-E, 214-C en 215-E",
+    audience: "Keuken, spoelkeuken, supervisor, assistent-supervisor en coördinator",
+    action: "Plaats extra lege kratten, twee extra GFT-bakken en scheid koude retour direct per workshop.",
+    time: "10:28",
+    highlight: false,
+  },
+  {
+    what: "Badgecontrole bij Expo-ingang aangescherpt in afstemming met Myriam Wijnen",
+    where: "Centrale Hal en schuifdeuren Expozaal",
+    audience: "Event hosts, beveiliging, supervisor en coördinator",
+    action: "Verwijs deelnemers zonder badge terug naar centrale registratie. Standhouders pas na 18:45 doorlaten.",
+    time: "08:05",
+    highlight: false,
+  },
+  {
+    what: "Ramadan To Go-productie toegevoegd met aparte koude lijn en uitgifteset",
+    where: "Keuken koud, ExpoKantoor en kelderlogistiek",
+    audience: "Keuken, kelderlogistiek, event hosts, supervisor en coördinator",
+    action: "Reserveer tassen, water, handfruit en warme koffie-uitgifte voor Mine Lakbir-Demirbag om 18:30.",
+    time: "16:02",
     highlight: false,
   },
 ];
 
 const notices = [
   {
-    title: "Expozaal routing aangepast",
+    title: "Expo-routing aangepast",
     priority: "critical",
     state: "Ongelezen",
-    audience: "Bekende medewerkers, supervisor, assistent-supervisor, coördinator",
-    body: "Uitgifte schuift door naar Mies Bouwman Foyer. Lift B blijft vrij voor retour en hulpmiddelen.",
+    audience: "Bekende medewerkers, event hosts, supervisor, assistent-supervisor, coördinator",
+    body: "Uitgifte en retour lopen niet meer parallel. De foyer wordt front-of-house, de liftzone blijft uitsluitend service.",
     meta: ["Expozaal / Mies Bouwman Foyer", "13:40", "Direct handelen"],
   },
   {
-    title: "Lunchworkshop krijgt extra audiovisuele ondersteuning",
+    title: "Vroege ploeg geactiveerd",
     priority: "operational",
     state: "Nieuw",
-    audience: "Supervisor, assistent-supervisor, coördinator",
-    body: "Controleer opstelling, stroompunt en vrije looplijn in 114-E Jaarbeurs Meetup.",
-    meta: ["114-E", "12:55", "Werkorder aangepast"],
+    audience: "Eerste medewerkers, supervisor, assistent-supervisor",
+    body: "Registratie, stroompunten en infostandaards moeten vóór 06:30 gereed staan in de Centrale Hal.",
+    meta: ["Centrale Hal", "05:12", "Startset gereedmaken"],
   },
   {
-    title: "Onboardingcheck verplicht",
+    title: "Spoel- en keukenflow opgeschaald",
+    priority: "operational",
+    state: "Nieuw",
+    audience: "Keuken, spoelkeuken, supervisor, coördinator",
+    body: "Vier lunchworkshops en theaterpiek vragen om extra retourbuffer, aparte koude lijn en scherpere kratwissels.",
+    meta: ["114 / 117 / 214 / 215", "10:28", "Capaciteit verhogen"],
+  },
+  {
+    title: "Event host briefing aangescherpt",
     priority: "",
     state: "Gelezen",
-    audience: "Nieuwe medewerkers, supervisor, assistent-supervisor",
-    body: "Nieuwe medewerkers worden pas inzetbaar na routebevestiging en visuele materiaalcheck.",
-    meta: ["Briefingpunt", "11:20", "Vrijgave vereist"],
+    audience: "Event hosts, supervisor",
+    body: "Event hosts krijgen alleen gastenstroom-, badge- en routingupdates en niet de interne keuken- of leveranciersdetails.",
+    meta: ["Need-to-know", "08:05", "Geen groepsapp-logica"],
   },
 ];
 
 const workOrderItems = [
   {
-    time: "08:00 - 18:00",
-    room: "114-E Jaarbeurs Meetup",
-    title: "Lunchworkshop infectieziekten",
-    owner: "Catering Operations / Audio Visual",
-    status: "Nieuw",
+    time: "05:00 - 17:00",
+    room: "Beatrix Theater",
+    title: "Plenair programma, projectie, audio en backstage-opstelling",
+    owner: "Audio Visual / Theater / Coördinatie",
+    status: "Kritiek",
+  },
+  {
+    time: "06:30 - 19:30",
+    room: "Centrale Hal Begane Grond",
+    title: "Registratie, stroompunten, infostandaards, beveiliging en garderobe",
+    owner: "Facilities / Planning / Security",
+    status: "Live",
   },
   {
     time: "08:00 - 18:00",
-    room: "Expozaal",
-    title: "Water en servicekratten opstellen",
-    owner: "Catering Operations",
-    status: "Gewijzigd",
-  },
-  {
-    time: "12:00 - 13:30",
-    room: "Mies Bouwman Foyer",
-    title: "Lunch workshop behandeling eczeem",
-    owner: "Supervisor Beatrix",
+    room: "114-E, 117-E, 214-C en 215-E",
+    title: "Lunchworkshops met water, tafellinnen, hostess en lunchdranken",
+    owner: "Kitchen Cold / Catering Operations",
     status: "Definitief",
   },
   {
-    time: "17:30 - 22:00",
-    room: "Beatrix Theater",
-    title: "Walking dinner en glasretourpiek",
-    owner: "Debras / Spoel / Coördinatie",
-    status: "Kritiek",
+    time: "12:00 - 13:30",
+    room: "Jaarbeurs Meetup-zalen",
+    title: "Lunch Op Maat VJ met buffet, servies, allergenenbordjes en dranken",
+    owner: "Keuken / Magazijn Hallen / Debras",
+    status: "Gewijzigd",
+  },
+  {
+    time: "16:00 - 18:00",
+    room: "ExpoKantoor en kelderlogistiek",
+    title: "Ramadan To Go en aanvullende hospitality voor Mine Lakbir-Demirbag",
+    owner: "Kitchen Cold / Kelder / Event hosts",
+    status: "Nieuw",
+  },
+  {
+    time: "18:45 - 20:00",
+    room: "Expozaal en Mineurslaan-zijde",
+    title: "Afbouwtoegang voor standhouders en leveranciers onder beveiligingscontrole",
+    owner: "Security / Coördinatie",
+    status: "Bevestigen",
   },
 ];
 
 const routeLabels = {
+  eerste: "Eerste medewerker-link actief",
   nieuw: "Nieuwe medewerker-link actief",
   bekend: "Bekende medewerker-link actief",
+  eventhost: "Event host-link actief",
   supervisor: "Supervisor-link actief",
   assistant: "Assistent-supervisor-link actief",
   coordinator: "Coördinator-link actief",
-};
-
-const rolePins = {
-  supervisor: "2406",
-  assistant: "2407",
-  coordinator: "2408",
 };
 
 const protectedRoleConfig = {
@@ -242,16 +279,20 @@ function applyRoleFromQuery() {
   if (!rawRole) return;
 
   const mapping = {
+    eerste: "eerste",
+    first: "eerste",
+    vroeg: "eerste",
     nieuw: "nieuw",
     new: "nieuw",
     bekend: "bekend",
     known: "bekend",
+    eventhost: "eventhost",
+    host: "eventhost",
     supervisor: "supervisor",
     assistant: "assistant",
     "assistent-supervisor": "assistant",
     assistent: "assistant",
     coordinator: "coordinator",
-    coordinatoren: "coordinator",
     coordinatie: "coordinator",
   };
 
@@ -279,9 +320,9 @@ function getGrantedRoles() {
   }
 }
 
-function setGrantedRole(role) {
+function setGrantedRoles(roles) {
   const granted = new Set(getGrantedRoles());
-  granted.add(role);
+  roles.forEach((role) => granted.add(role));
   sessionStorage.setItem("beatrixAccessRoles", JSON.stringify(Array.from(granted)));
 }
 
@@ -306,8 +347,9 @@ function createAccessModal() {
       <p class="subtle-note" data-access-copy>
         Deze informatie is niet bedoeld voor algemene medewerkers of nieuwe medewerkers.
       </p>
+      <p class="access-hint">Demo-PIN: <strong>${sharedDemoPinLabel}</strong></p>
       <label class="access-label" for="access-pin">Voer de demo-PIN in</label>
-      <input id="access-pin" class="access-input" type="password" inputmode="numeric" autocomplete="off" />
+      <input id="access-pin" class="access-input" type="password" autocomplete="off" />
       <div class="access-error" data-access-error hidden>Onjuiste PIN. Probeer opnieuw.</div>
       <div class="cta-row">
         <button class="button button-primary" type="button" data-access-submit>Toegang geven</button>
@@ -341,7 +383,7 @@ function requestProtectedAccess(key, onSuccess) {
 
   title.textContent = `${config.label} is afgeschermd`;
   copy.textContent =
-    "Deze laag is alleen bedoeld voor supervisor, assistent-supervisor of coördinatie. Algemene medewerkers zien deze informatie niet.";
+    "Deze laag is alleen bedoeld voor supervisor, assistent-supervisor of coördinatie. Medewerker-, event host- en eerste-medewerkerlinks blijven bewust schoner.";
   input.value = "";
   error.hidden = true;
   modal.classList.add("is-visible");
@@ -353,10 +395,9 @@ function requestProtectedAccess(key, onSuccess) {
   };
 
   submit.onclick = () => {
-    const pin = input.value.trim();
-    const matchedRole = Object.entries(rolePins).find(([, value]) => value === pin)?.[0];
-    if (matchedRole && config.allowedRoles.includes(matchedRole)) {
-      setGrantedRole(matchedRole);
+    const pin = input.value.replace(/\s+/g, "").trim().toUpperCase();
+    if (pin === sharedDemoPin) {
+      setGrantedRoles(config.allowedRoles);
       close();
       onSuccess?.();
       return;
@@ -400,8 +441,9 @@ function protectCurrentPage() {
       <p class="eyebrow">Roltoegang</p>
       <h3>Deze laag is afgeschermd</h3>
       <p>
-        Deze inhoud is alleen bedoeld voor supervisor, assistent-supervisor of coördinatie. Je kunt hieronder toegang vragen of teruggaan naar openbare onderdelen van het platform.
+        Deze inhoud is alleen bedoeld voor supervisor, assistent-supervisor of coördinatie. De navigatie blijft bewust open, zodat je altijd terug kunt naar de openbare demo.
       </p>
+      <p class="access-hint">Demo-PIN: <strong>${sharedDemoPinLabel}</strong></p>
       <div class="cta-row">
         <button class="button button-primary" type="button" data-access-open>Voer PIN in</button>
       </div>
