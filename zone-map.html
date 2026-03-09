@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Beatrix-zonekaart | Beatrix Operations Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="ops-body">
+    <div class="ops-grid"></div>
+    <header class="ops-header">
+      <a class="ops-brand" href="./index.html">
+        <span class="ops-brand-mark">
+          <img class="brand-logo" src="./assets/media/jaarbeurs-logo.jpg" alt="Jaarbeurs logo" />
+        </span>
+        <span>
+          <strong>Beatrix Operations Platform</strong>
+          <small>Beatrix-zonekaart</small>
+        </span>
+      </a>
+      <nav class="ops-nav">
+        <a href="./website.html">Home</a>
+        <a href="./briefing.html">Dagbriefing</a>
+        <a href="./debras.html">Debras</a>
+        <a href="./materials.html">Materiaalbibliotheek</a>
+        <a href="./updates.html">Updates</a>
+        <a href="./supervisor.html">Supervisor</a>
+        <a href="./form.html">Voorbereidingsformulier</a>
+        <a href="./app.html">App</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="scope-banner">
+        Conceptuele zonekaart voor briefing, onboarding en Debras-routing binnen het Beatrixgebouw.
+      </section>
+
+      <nav class="breadcrumb">
+        <a href="./index.html">Demo</a>
+        <span>/</span>
+        <a href="./website.html">Website</a>
+        <span>/</span>
+        <span>Beatrix-zonekaart</span>
+      </nav>
+
+      <div class="page-tabs">
+        <a href="#kaart">Kaart</a>
+        <a href="#liftzone">Liftzone</a>
+        <a href="#veiligheid">Veiligheid</a>
+      </div>
+
+      <section class="section-header" id="kaart">
+        <p class="eyebrow">Zonekaart</p>
+        <h2>Welke plekken medewerkers direct moeten herkennen</h2>
+      </section>
+
+      <section class="map-shell">
+        <article class="map-board">
+          <div class="map-grid">
+            <section class="map-level">
+              <h3>Level 4</h3>
+              <div class="map-row">
+                <div class="map-node route">Dineropbouw</div>
+                <div class="map-node warning">Glasretourzone</div>
+                <div class="map-node route">Servicegang Noord</div>
+              </div>
+            </section>
+            <section class="map-level">
+              <h3>Level 2</h3>
+              <div class="map-row">
+                <div class="map-node route">Plenaire zaal</div>
+                <div class="map-node critical">Lift B</div>
+                <div class="map-node route">Briefingpunt entree</div>
+              </div>
+            </section>
+            <section class="map-level">
+              <h3>Service &amp; logistiek</h3>
+              <div class="map-row">
+                <div class="map-node route">Lift A</div>
+                <div class="map-node warning">Spoelvoorzone</div>
+                <div class="map-node warning">Afvalpunt</div>
+                <div class="map-node route">Retourbuffer</div>
+              </div>
+            </section>
+          </div>
+        </article>
+
+        <aside class="map-legend">
+          <div class="legend-item">
+            <span class="legend-dot blue"></span>
+            <div>
+              <strong>Route</strong>
+              <p>Standaard looplijn voor service, retour of onboarding.</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot orange"></span>
+            <div>
+              <strong>Extra aandacht</strong>
+              <p>Plekken waar afval, glas of Debras kan opstropen.</p>
+            </div>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot red"></span>
+            <div>
+              <strong>Kritisch punt</strong>
+              <p>Locaties waar blokkade direct effect heeft op de partij.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section-header" id="liftzone">
+        <p class="eyebrow">Liftzone</p>
+        <h2>Niet onderhandelbare regels voor doorstroming</h2>
+      </section>
+
+      <section class="scenario-grid">
+        <article class="scenario-card">
+          <span class="status-chip stable">Goed</span>
+          <h3>Liftzone vrij</h3>
+          <p>Alleen materiaal in actieve doorstroom, geen wachtopslag of losse stapels in de route.</p>
+        </article>
+        <article class="scenario-card">
+          <span class="status-chip operational">Risico</span>
+          <h3>Tijdelijke piekdruk</h3>
+          <p>Supervisor plant retourvensters en communiceert alternatieve lift- of serviceganglogica.</p>
+        </article>
+        <article class="scenario-card">
+          <span class="status-chip critical">Fout</span>
+          <h3>Blokkade in gangpad</h3>
+          <p>Karren, glas of dienbladen staan geparkeerd in plaats van in beweging, waardoor ombouw of Debras stokt.</p>
+        </article>
+      </section>
+
+      <section class="section-header" id="veiligheid">
+        <p class="eyebrow">Veiligheid &amp; oriëntatie</p>
+        <h2>Wat nieuwe medewerkers minstens moeten weten</h2>
+      </section>
+
+      <section class="hotspot-grid">
+        <article class="hotspot-card">
+          <h3>Nooduitgangen</h3>
+          <p>Moeten herkenbaar en vrij blijven, ook tijdens piekmomenten en afbouw.</p>
+        </article>
+        <article class="hotspot-card">
+          <h3>Toiletten &amp; pauzepunten</h3>
+          <p>Nieuw personeel hoort deze locaties te kennen vóór aanvang van de dienst.</p>
+        </article>
+        <article class="hotspot-card">
+          <h3>Briefingpunt</h3>
+          <p>Hier landen onboarding, routekeuze en laatste operationele updates samen.</p>
+        </article>
+      </section>
+
+      <footer class="demo-footer">
+        <div>
+          <strong>Oriëntatie als kernlaag</strong>
+          <p>Deze pagina laat zien dat gebouwkennis niet impliciet mag blijven. Zonder zonekaart blijft onboarding te abstract en te foutgevoelig.</p>
+        </div>
+        <div class="footer-links">
+          <a href="./onboarding.html">Onboarding</a>
+          <a href="./briefing.html">Dagbriefing</a>
+          <a href="./app.html">App</a>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>
