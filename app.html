@@ -26,14 +26,15 @@
       </a>
       <nav class="ops-nav">
         <a href="./website.html">Portal</a>
-        <a href="./work-order.html">Work Order</a>
+        <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
         <a href="./audiences.html">Routes</a>
         <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
         <a href="./materials.html">Materialen</a>
-        <a href="./updates.html">Updates</a>
-        <a href="./supervisor.html">Supervisor</a>
-        <a href="./coordinator.html">Coördinator</a>
+        <a href="./updates.html" data-protected-role="workorder">Updates</a>
+        <a href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
         <a class="is-active" href="./app.html">App</a>
       </nav>
     </header>
@@ -55,7 +56,7 @@
           <h1>De app toont niet alles aan iedereen, maar alleen wat nu nodig is.</h1>
           <p class="lead">
             Deze app is de uitvoeringslaag van de digitale work order. De bron zit in het portal; de app vertaalt die bron naar gerichte
-            schermen voor nieuwe medewerkers, bekende medewerkers, supervisors en coördinatie.
+            schermen voor nieuwe medewerkers, bekende medewerkers, supervisor, assistent-supervisor en coördinatie.
           </p>
           <div class="route-banner" data-role-badge>Rolkeuze vereist</div>
         </div>
@@ -63,7 +64,7 @@
           <img class="feature-photo" src="./assets/media/mies-bouwman-official.jpg" alt="Mies Bouwman Foyer Jaarbeurs" />
           <span class="highlight-label">Delen</span>
           <strong>Gebruik rol-specifieke links</strong>
-          <p>Bijvoorbeeld `?role=nieuw` of `?role=supervisor`, zodat de gebruiker direct in de juiste route landt.</p>
+          <p>Bijvoorbeeld `?role=nieuw` of `?role=assistant`, zodat de gebruiker direct in de juiste route landt.</p>
         </aside>
       </section>
 
@@ -97,8 +98,9 @@
             <div class="route-switcher">
               <button class="route-button is-active" data-route-target="nieuw">Nieuw</button>
               <button class="route-button" data-route-target="bekend">Bekend</button>
-              <button class="route-button" data-route-target="supervisor">Supervisor</button>
-              <button class="route-button" data-route-target="coordinator">Coördinator</button>
+              <button class="route-button" data-route-target="supervisor" data-protected-role="supervisor">Supervisor</button>
+              <button class="route-button" data-route-target="assistant" data-protected-role="assistant">Assistent-supervisor</button>
+              <button class="route-button" data-route-target="coordinator" data-protected-role="coordinator">Coördinator</button>
             </div>
           </div>
           <div class="phone-section route-panel is-visible" data-route-panel="nieuw">
@@ -129,6 +131,15 @@
               <li>Nieuwe medewerkers vrijgeven</li>
             </ol>
           </div>
+          <div class="phone-section route-panel" data-route-panel="assistant">
+            <strong>Assistent-supervisor</strong>
+            <ol class="step-list">
+              <li>Nieuwe medewerkers begeleiden</li>
+              <li>Zaalwisselingen en routing bewaken</li>
+              <li>Dienbladen, kratten en afvalstromen controleren</li>
+              <li>Afwijkingen direct terugmelden</li>
+            </ol>
+          </div>
           <div class="phone-section route-panel" data-route-panel="coordinator">
             <strong>Coördinator</strong>
             <ol class="step-list">
@@ -151,7 +162,7 @@
             <div class="phone-alert">
               <strong>Buffet verplaatst van Expozaal naar Mies Bouwman Foyer</strong>
               <p>Waar: Level 2 servicegang en foyeropstelling</p>
-              <p>Voor wie: bekende medewerkers, supervisors en coördinator</p>
+              <p>Voor wie: bekende medewerkers, supervisor, assistent-supervisor en coördinator</p>
               <p>Wat nu doen: routing en glasretour direct aanpassen.</p>
             </div>
           </div>
@@ -184,6 +195,15 @@
             <li>Nieuwe medewerkers en vrijgave</li>
             <li>Debras-doorstroming en liftzone</li>
             <li>Materialen en afwijkingen</li>
+          </ul>
+        </article>
+        <article class="route-column">
+          <h3>Assistent-supervisor-link</h3>
+          <ul>
+            <li>Ondersteunt onboarding en zaalwisselingen</li>
+            <li>Controleert Dienbladen, glas en kratten</li>
+            <li>Bewaakt de uitvoering op de vloer</li>
+            <li>Geen volledige coördinatorinformatie</li>
           </ul>
         </article>
         <article class="route-column">

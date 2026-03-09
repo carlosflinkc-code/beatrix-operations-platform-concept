@@ -26,21 +26,22 @@
       </a>
       <nav class="ops-nav">
         <a href="./website.html">Portal</a>
-        <a href="./work-order.html">Work Order</a>
+        <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
         <a href="./audiences.html">Routes</a>
         <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
         <a class="is-active" href="./materials.html">Materialen</a>
         <a href="./updates.html">Updates</a>
-        <a href="./supervisor.html">Supervisor</a>
-        <a href="./coordinator.html">Coördinator</a>
+        <a href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>
 
     <main class="page-shell">
       <section class="scope-banner scope-banner-strong">
-        Deze bibliotheek gebruikt alle 18 Debras-beelden uit jouw document en vertaalt ze naar directe werkinstructies voor het Beatrixgebouw.
+        Alle 18 Debras-beelden uit jouw handboek zijn hier verwerkt. Waar een los item in een krat of bak hoort, worden beide beelden samen getoond.
       </section>
 
       <nav class="breadcrumb">
@@ -52,181 +53,186 @@
       <section class="hero-slab compact-hero">
         <div class="hero-copy-block">
           <p class="eyebrow">Visuele werkinstructie</p>
-          <h1>Beeld is hier geen decoratie, maar operationele taal.</h1>
+          <h1>Dit is de briefinglaag die nieuwe medewerkers vandaag nog missen.</h1>
           <p class="lead">
-            Nieuwe en tijdelijke medewerkers kunnen niet vertrouwen op impliciete kennis. Daarom krijgt elk relevant object een duidelijke
-            visuele kaart: wat is het, hoe gebruik je het, wat mag niet, waar hoort het retour en welk risico voorkom je ermee.
+            De vraag op de vloer is niet alleen wat een object heet, maar ook: hoe ziet het eruit, waar hoort het in, wat is goed,
+            wat is fout en welk risico voorkom je door het direct juist te doen. Daarom tonen deze kaarten steeds het item én het juiste krat of de juiste bak samen.
           </p>
         </div>
         <aside class="side-highlight">
           <img class="feature-photo" src="./assets/media/debras/debras-zone-bij-lift.jpeg" alt="Debras-zone bij de liften" />
           <span class="highlight-label">Kernbeeld</span>
           <strong>Debras-zone bij de liften</strong>
-          <p>Hier komen routing, afval, materiaal en veiligheid samen. Daarom is visuele herkenning kernfunctionaliteit.</p>
+          <p>Hier komen Dienbladen, glas, afval, kratten en routing samen. Daarom moet deze beeldtaal vooraf beschikbaar zijn.</p>
         </aside>
       </section>
 
-      <section class="material-gallery">
-        <article class="material-item">
-          <img src="./assets/media/debras/koffiemokken-krat.jpeg" alt="Krat met binnenwerk voor witte koffiemokken" />
-          <h3>Krat voor witte koffiemokken</h3>
-          <p>Mokken altijd omgekeerd plaatsen in het binnenwerk.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Één soort mok per krat.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Mokken los of rechtop terugzetten.</span></div>
+      <section class="pair-grid">
+        <article class="pair-card">
+          <h3>Witte koffiemokken</h3>
+          <p>De mokken gaan omgekeerd in het krat met binnenwerk. Geen losse opslag en geen mix met theemokken.</p>
+          <div class="pair-single">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/koffiemokken-krat.jpeg" alt="Krat met binnenwerk voor witte koffiemokken" />
+              <span>Krat met binnenwerk voor witte koffiemokken</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Mokken altijd omgekeerd en per soort gesorteerd terugzetten.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Mokken los, rechtop of gemengd met andere mokken verwerken.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/gft-bak.jpeg" alt="Groene GFT-bak" />
-          <h3>Groene GFT-bak</h3>
-          <p>Voor etensresten en vocht. Met blauwe zak uitsluitend voor papier en servetten.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Stromen direct scheiden.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Etensresten in blauwe zakken.</span></div>
+
+        <article class="pair-card">
+          <h3>Bruine porseleinen bakjes</h3>
+          <p>Het losse bakje en het juiste krat horen visueel bij elkaar, zodat direct duidelijk is waar dit materiaal in moet.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/bruin-bakje-los.jpeg" alt="Los bruin porseleinen bakje" />
+              <span>Los bruin porseleinen bakje</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/bruine-bakjes-krat.jpeg" alt="Krat voor bruine porseleinen bakjes" />
+              <span>Juiste krat voor bruine porseleinen bakjes</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Alleen dit type bakje in dit krat.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Bakjes los laten, mengen of in een ander servieskrat zetten.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/bruine-bakjes-krat.jpeg" alt="Krat met bruine porseleinen bakjes" />
-          <h3>Krat voor bruine porseleinen bakjes</h3>
-          <p>Alleen dit type bakje in dit krat.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Sorteren per exact materiaaltype.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Mengen met ander servies.</span></div>
+
+        <article class="pair-card">
+          <h3>Longdrinkglas</h3>
+          <p>Het losse longdrinkglas hoort in het krat voor longdrinkglazen. De koppeling is hier bewust één op één gemaakt.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/longdrinkglas-los.jpeg" alt="Los longdrinkglas" />
+              <span>Los longdrinkglas</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/longdrinkglazen-krat.jpeg" alt="Krat voor longdrinkglazen" />
+              <span>Juiste krat voor longdrinkglazen</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Alle glazen op hun kop en per glastype gescheiden.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Mengen met wijnglas, theeglas of los op een kar laten staan.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/bruin-bakje-los.jpeg" alt="Los bruin porseleinen bakje" />
-          <h3>Los bruin bakje</h3>
-          <p>Herken aan de bruine kleur en plaats terug in het juiste krat.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Retour</strong><span>Naar bakjeskrat, niet los op kar.</span></div>
-            <div class="fact-row"><strong>Risico</strong><span>Verlies van sortering en extra zoekwerk.</span></div>
+
+        <article class="pair-card">
+          <h3>Wijnglas</h3>
+          <p>Ook hier wordt het losse wijnglas direct gekoppeld aan het juiste krat, zodat er geen interpretatieruimte blijft.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/wijnglas-los.jpeg" alt="Los wijnglas" />
+              <span>Los wijnglas</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/wijnglazen-krat.jpeg" alt="Krat voor wijnglazen" />
+              <span>Juiste krat voor wijnglazen</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Model herkennen en direct in het wijnglaskrat plaatsen.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Bij twijfel ergens anders neerzetten of mengen met longdrinkglas.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/longdrinkglazen-krat.jpeg" alt="Krat voor longdrinkglazen" />
-          <h3>Krat voor longdrinkglazen</h3>
-          <p>Alle glazen op zijn kop plaatsen.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Per glastype gescheiden.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Mixen met wijn- of theeglazen.</span></div>
+
+        <article class="pair-card">
+          <h3>Theeglas en theemokken</h3>
+          <p>Het theeglas en het krat voor theemokken zijn beide relevant voor de briefing, omdat beide vaak door elkaar worden gehaald met koffie- en glasstromen.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/theeglas-los.jpeg" alt="Los theeglas" />
+              <span>Los theeglas</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/theemokken-krat.jpeg" alt="Krat voor theemokken" />
+              <span>Krat voor theemokken</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Per type servies en glasstroom strak scheiden.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Theemokken en koffiemokken of glaswerk als één reststroom behandelen.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/longdrinkglas-los.jpeg" alt="Los longdrinkglas" />
-          <h3>Los longdrinkglas</h3>
-          <p>Hoort uitsluitend in het krat voor longdrinkglazen.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Retour</strong><span>Niet los laten op dienblad of kar.</span></div>
-            <div class="fact-row"><strong>Risico</strong><span>Breuk, verkeerd sorteren, vertraging.</span></div>
+
+        <article class="pair-card">
+          <h3>Afval en bestekbakken</h3>
+          <p>Niet alles hoort in een krat. Deze bakken zijn juist belangrijk omdat ze vooraf gepositioneerd moeten worden voor een schone doorstroom.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/gft-bak.jpeg" alt="Groene GFT-bak" />
+              <span>Groene GFT-bak voor etensresten en vocht</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/vorkjes-bak-blauw.jpeg" alt="Blauwe bak voor vorkjes" />
+              <span>Blauwe bak voor vorkjes</span>
+            </div>
+          </div>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/lepeltjes-bak-groen.jpeg" alt="Groene bak voor lepeltjes" />
+              <span>Groene bak voor lepeltjes</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/debras-zone-bij-lift.jpeg" alt="Debras-zone bij de liften" />
+              <span>Debras-zone bij de liften</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Afval- en bestekstromen vooraf logisch positioneren en gescheiden houden.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Zoeken tijdens piek of afval en bestek door elkaar laten lopen.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/wijnglazen-krat.jpeg" alt="Krat voor wijnglazen" />
-          <h3>Krat voor wijnglazen</h3>
-          <p>Al het glaswerk op zijn kop en per soort gesorteerd.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Direct van dienblad naar juiste krat.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Volle kratten niet vervangen.</span></div>
+
+        <article class="pair-card">
+          <h3>Dienbladen</h3>
+          <p>Dienbladen moeten in de briefing visueel worden uitgelegd, omdat correct en fout gebruik direct zichtbaar en relevant is.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/din-blad-goed.jpeg" alt="Dienblad juist gepositioneerd" />
+              <span>Juist: omgekeerd zodat vocht eruit loopt</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/din-blad-fout.jpeg" alt="Dienblad onjuist gepositioneerd" />
+              <span>Onjuist: vol en verkeerd neergezet</span>
+            </div>
+          </div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Dienbladen vasthouden en correct omgekeerd positioneren.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Dienbladen als tijdelijke parkeerplek gebruiken of fout wegzetten.</span></div>
           </div>
         </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/wijnglas-los.jpeg" alt="Los wijnglas" />
-          <h3>Los wijnglas</h3>
-          <p>Herken het model en plaats het uitsluitend in het wijnglazenkrat.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Modelherkenning in onboarding opnemen.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Onzeker glas toch ergens neerzetten.</span></div>
+
+        <article class="pair-card">
+          <h3>Transport en kleurcodering</h3>
+          <p>Transportkar en flessenkratten zijn essentieel voor Debras-routing en retourlogica tijdens het event van morgen.</p>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/transportkar-debras.jpeg" alt="Transportkar voor Debras" />
+              <span>Transportkar voor Debras</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/coca-cola-krat.jpeg" alt="Rode Coca-Cola krat" />
+              <span>Rode krat voor frisdrank- en waterflesjes</span>
+            </div>
           </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/vorkjes-bak-blauw.jpeg" alt="Blauwe bak voor vorkjes" />
-          <h3>Blauwe bak voor vorkjes</h3>
-          <p>Niet te vol vullen zodat bakken stapelbaar blijven.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Bestek gescheiden en stapelbaar houden.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Overvullen en door elkaar gebruiken.</span></div>
+          <div class="pair-images">
+            <div class="pair-frame">
+              <img src="./assets/media/debras/heineken-krat.jpeg" alt="Groene Heineken krat" />
+              <span>Groene krat voor bierflesjes</span>
+            </div>
+            <div class="pair-frame">
+              <img src="./assets/media/debras/debras-zone-bij-lift.jpeg" alt="Debras-zone bij lift" />
+              <span>Werkgebied waar transport en retour samenkomen</span>
+            </div>
           </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/lepeltjes-bak-groen.jpeg" alt="Groene bak voor lepeltjes" />
-          <h3>Groene bak voor lepeltjes</h3>
-          <p>Alleen lepeltjes, niet te vol, goed stapelbaar.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Retour</strong><span>Per besteksoort scheiden.</span></div>
-            <div class="fact-row"><strong>Risico</strong><span>Verkeerde sortering vertraagt spoelproces.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/din-blad-goed.jpeg" alt="DIN-blad goed omgekeerd" />
-          <h3>DIN-bladen juist</h3>
-          <p>Correct omgekeerd, zodat vocht eruit loopt en bladen schoon blijven.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Altijd omgekeerd positioneren.</span></div>
-            <div class="fact-row"><strong>Waarom</strong><span>Sneller, schoner en veiliger.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/din-blad-fout.jpeg" alt="DIN-blad fout omgekeerd" />
-          <h3>DIN-bladen onjuist</h3>
-          <p>Vol blad verkeerd neergezet; vocht blijft staan en vervuiling neemt toe.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Fout</strong><span>Bladen neerzetten zonder omkeerlogica.</span></div>
-            <div class="fact-row"><strong>Risico</strong><span>Vervuiling en extra schoonmaaktijd.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/transportkar-debras.jpeg" alt="Transportkar voor Debras" />
-          <h3>Transportkar voor Debras</h3>
-          <p>Alleen bij de liften gebruiken en nooit in het gangpad parkeren.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Routegebonden gebruik bij liftzone.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Gangpad als wachtopslag gebruiken.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/coca-cola-krat.jpeg" alt="Rode Coca-Cola krat" />
-          <h3>Rode Coca-Cola krat</h3>
-          <p>Voor frisdrank- en waterflesjes. Niet gebruiken voor bierflesjes.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Kleurcode</strong><span>Rood = frisdrank en water.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Bier hierin terugzetten.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/heineken-krat.jpeg" alt="Groene Heineken krat" />
-          <h3>Groene Heineken krat</h3>
-          <p>Voor bierflesjes. Niet mengen met frisdrankkratten.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Kleurcode</strong><span>Groen = bierflesjes.</span></div>
-            <div class="fact-row"><strong>Risico</strong><span>Foute retourstroom en extra correctiewerk.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/theemokken-krat.jpeg" alt="Krat voor theemokken" />
-          <h3>Krat voor theemokken</h3>
-          <p>Eén soort mok per krat houden.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Geen mix met koffiemokken.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Sorteren op gevoel in plaats van type.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/theeglas-los.jpeg" alt="Los theeglas" />
-          <h3>Los theeglas</h3>
-          <p>Hoort in het bijbehorende krat, niet los in een gemengde glasstroom.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Retour</strong><span>Direct naar juiste glaskrat.</span></div>
-            <div class="fact-row"><strong>Risico</strong><span>Breuk en onduidelijke spoelstroom.</span></div>
-          </div>
-        </article>
-        <article class="material-item">
-          <img src="./assets/media/debras/debras-zone-bij-lift.jpeg" alt="Debras-zone bij de liften" />
-          <h3>Debras-zone bij de liften</h3>
-          <p>Hier worden karren geordend, afval gescheiden en materialen direct verwerkt.</p>
-          <div class="material-facts">
-            <div class="fact-row"><strong>Goed</strong><span>Werk geconcentreerd in de daarvoor bedoelde zone.</span></div>
-            <div class="fact-row"><strong>Fout</strong><span>Verplaatsen naar gangpad of losse hoek.</span></div>
+          <div class="pair-meta">
+            <div class="pair-meta-item"><strong>Goed</strong><span>Kleurcodering strikt volgen en transport bij de liftzone houden.</span></div>
+            <div class="pair-meta-item"><strong>Fout</strong><span>Karren of rolcontainers in het gangpad plaatsen of flessenkratten mengen.</span></div>
           </div>
         </article>
       </section>

@@ -20,7 +20,7 @@
     />
     <meta
       property="og:image"
-      content="https://carlosflinkc-code.github.io/beatrix-operations-platform-concept/assets/media/beatrixgebouw-official.jpg"
+      content="https://carlosflinkc-code.github.io/beatrix-operations-platform-concept/assets/media/expozaal-official.jpg"
     />
     <meta property="og:type" content="website" />
     <link
@@ -49,14 +49,15 @@
       </a>
       <nav class="ops-nav">
         <a href="./website.html">Portal</a>
-        <a href="./work-order.html">Work Order</a>
+        <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
         <a href="./audiences.html">Routes</a>
         <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
         <a href="./materials.html">Materialen</a>
-        <a href="./updates.html">Updates</a>
-        <a href="./supervisor.html">Supervisor</a>
-        <a href="./coordinator.html">Coördinator</a>
+        <a href="./updates.html" data-protected-role="workorder">Updates</a>
+        <a href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>
@@ -76,7 +77,7 @@
           </p>
           <p class="support-copy">
             Voor de partij van morgen, dinsdag 10 maart 2026, wordt zichtbaar hoe eventinformatie, routing, materiaalherkenning,
-            role-based toegang en live updates als één systeem kunnen werken in plaats van als losse prints en mondeling herstelwerk.
+            rolgestuurde toegang en live updates als één systeem kunnen werken in plaats van als losse prints en mondeling herstelwerk.
           </p>
           <div class="pill-row">
             <span class="pill stable">Beatrixgebouw-only</span>
@@ -84,13 +85,13 @@
             <span class="pill critical">Rolgestuurde toegang</span>
           </div>
           <div class="cta-row">
-            <a class="button button-primary" href="./work-order.html">Open live work order</a>
+            <a class="button button-primary" href="./work-order.html" data-protected-role="workorder">Open live work order</a>
             <a class="button button-secondary" href="./app.html?role=nieuw">Open medewerkerroute</a>
-            <a class="button button-secondary" href="./coordinator.html">Open coördinatorlaag</a>
+            <a class="button button-secondary" href="./coordinator.html" data-protected-role="coordinator">Open coördinatorlaag</a>
           </div>
         </div>
         <aside class="hero-visual">
-          <img class="hero-photo" src="./assets/media/beatrixgebouw-official.jpg" alt="Beatrixgebouw Jaarbeurs" />
+          <img class="hero-photo" src="./assets/media/expozaal-official.jpg" alt="Expozaal in het Beatrixgebouw" />
           <div class="hero-visual-copy">
             <span class="metric-label">Morgen live in context</span>
             <h3>KNMP Voorjaarscongres · dinsdag 10 maart 2026</h3>
@@ -102,7 +103,7 @@
         <div class="hero-metrics">
           <article class="metric-card">
             <span class="metric-label">Coördinatie</span>
-            <strong>Noah Geritsen Gerritsen</strong>
+            <strong>Noah Geritsen</strong>
             <p>De coördinatorlaag toont hoe wijzigingen live gepubliceerd en bewaakt kunnen worden.</p>
           </article>
           <article class="metric-card">
@@ -124,22 +125,22 @@
       </section>
 
       <section class="signal-grid">
-        <article class="signal-card">
-          <h3>Eén centrale waarheid</h3>
-          <p>Alle briefing, work-order informatie en wijzigingen komen uit dezelfde bron in plaats van uit losse documenten en losse uitleg.</p>
-        </article>
-        <article class="signal-card">
-          <h3>Live wijzigingen</h3>
-          <p>Een aanpassing in routing, zaal, catering of Debras wordt direct gepubliceerd en zichtbaar op telefoon, iPad en desktop.</p>
-        </article>
-        <article class="signal-card">
-          <h3>Need-to-know per rol</h3>
-          <p>Nieuwe medewerkers zien niet dezelfde informatie als supervisors of coördinatie, terwijl iedereen wel met dezelfde waarheid werkt.</p>
-        </article>
-        <article class="signal-card">
-          <h3>Visuele instructie</h3>
-          <p>Materiaal, porselein, glas, bakjes, bladen en Debras-zones worden herkenbaar in beeld en niet alleen in tekst beschreven.</p>
-        </article>
+        <a class="related-link" href="./website.html">
+          <strong>Eén centrale waarheid</strong>
+          <span>Alle briefing, work-order informatie en wijzigingen komen uit dezelfde bron in plaats van uit losse documenten en losse uitleg.</span>
+        </a>
+        <a class="related-link" href="./updates.html" data-protected-role="workorder">
+          <strong>Live wijzigingen</strong>
+          <span>Een aanpassing in routing, zaal, catering of Debras wordt direct gepubliceerd en zichtbaar op telefoon, iPad en desktop.</span>
+        </a>
+        <a class="related-link" href="./audiences.html">
+          <strong>Need-to-know per rol</strong>
+          <span>Nieuwe medewerkers zien niet dezelfde informatie als supervisor, assistent-supervisor of coördinatie.</span>
+        </a>
+        <a class="related-link" href="./materials.html">
+          <strong>Visuele instructie</strong>
+          <span>Porselein, glas, bakjes, Dienbladen en Debras-zones worden herkenbaar in beeld en niet alleen in tekst beschreven.</span>
+        </a>
       </section>
 
       <section class="section-header">
@@ -162,7 +163,7 @@
           <ul class="bullet-list">
             <li>De work order wordt een live eventlaag met versiebeheer en audit trail.</li>
             <li>Wijzigingen worden meteen doorgezet naar de juiste doelgroep.</li>
-            <li>Onboarding, supervisorcontrole en coördinatie krijgen elk hun eigen informatievenster.</li>
+            <li>Onboarding, supervisorcontrole, assistent-supervisor en coördinatie krijgen elk hun eigen informatievenster.</li>
             <li>Debras en materiaalherkenning worden vastgelegd als overdraagbare operationele standaard.</li>
           </ul>
         </article>
@@ -174,7 +175,7 @@
       </section>
 
       <section class="module-grid">
-        <a class="module-card accent" href="./work-order.html">
+        <a class="module-card accent" href="./work-order.html" data-protected-role="workorder">
           <span class="module-tag">01</span>
           <h3>Live Work Order</h3>
           <p>Digitale eventlaag met status, planning, publicatie, contactpersonen en wijzigingsaudit.</p>
@@ -192,9 +193,9 @@
         <a class="module-card" href="./materials.html">
           <span class="module-tag">04</span>
           <h3>Visuele bibliotheek</h3>
-          <p>Porselein, wijnglazen, longdrinkglazen, DIN-bladen, kratten, bakken en Debras-zone in beeld.</p>
+          <p>Porselein, wijnglazen, longdrinkglazen, Dienbladen, kratten, bakken en Debras-zone in beeld.</p>
         </a>
-        <a class="module-card" href="./updates.html">
+        <a class="module-card" href="./updates.html" data-protected-role="workorder">
           <span class="module-tag">05</span>
           <h3>Updates</h3>
           <p>Wat is gewijzigd, waar het geldt, voor wie het relevant is en wat nu te doen.</p>
@@ -202,17 +203,50 @@
         <a class="module-card" href="./app.html">
           <span class="module-tag">06</span>
           <h3>App</h3>
-          <p>Mobiele routes voor nieuwe medewerkers, bekende medewerkers, supervisors en coördinatie.</p>
+          <p>Mobiele routes voor nieuwe medewerkers, bekende medewerkers, supervisor, assistent-supervisor en coördinatie.</p>
         </a>
-        <a class="module-card" href="./supervisor.html">
+        <a class="module-card" href="./supervisor.html" data-protected-role="supervisor">
           <span class="module-tag">07</span>
           <h3>Supervisorlaag</h3>
           <p>Piekmomenten, vrijgave, Debras-doorstroming en liftzonecontrole op één scherm.</p>
         </a>
-        <a class="module-card" href="./coordinator.html">
+        <a class="module-card" href="./assistant.html" data-protected-role="assistant">
           <span class="module-tag">08</span>
+          <h3>Assistent-supervisorlaag</h3>
+          <p>Ondersteunt de vloer, bewaakt uitvoering en helpt bij onboarding, doorstroming en controle.</p>
+        </a>
+        <a class="module-card" href="./coordinator.html" data-protected-role="coordinator">
+          <span class="module-tag">09</span>
           <h3>Coördinatorlaag</h3>
           <p>Publiceren, ontvangstcontrole, leveranciersafwijkingen en audit trail.</p>
+        </a>
+      </section>
+
+      <section class="section-header">
+        <p class="eyebrow">Direct doorklikken</p>
+        <h2>Wat iemand vanaf de homepage meteen moet kunnen openen.</h2>
+      </section>
+
+      <section class="quick-link-grid">
+        <a class="related-link" href="./briefing.html">
+          <strong>Waar werk je vandaag</strong>
+          <span>Zaal, foyer, servicegang en routing van de huidige partij.</span>
+        </a>
+        <a class="related-link" href="./debras.html">
+          <strong>Gedragsregels</strong>
+          <span>Dienbladen, gangpadregels, liftzone en Debras-standaarden.</span>
+        </a>
+        <a class="related-link" href="./materials.html">
+          <strong>Wat moet in welke krat</strong>
+          <span>Los item en juiste krat of bak altijd samen in beeld.</span>
+        </a>
+        <a class="related-link" href="./receiving.html" data-protected-role="coordinator">
+          <strong>Ontvangst &amp; inhuur</strong>
+          <span>Ingehuurde materialen, telling, schadecontrole en aftekenen.</span>
+        </a>
+        <a class="related-link" href="./updates.html" data-protected-role="workorder">
+          <strong>Live wijzigingen</strong>
+          <span>Wat is aangepast, voor wie dat geldt en wat direct te doen.</span>
         </a>
       </section>
 
@@ -231,7 +265,7 @@
           <p>Sneller zien wat vandaag anders is zonder opnieuw een volledige briefing of geprinte order door te moeten nemen.</p>
         </article>
         <article class="signal-card">
-          <h3>Supervisor</h3>
+          <h3>Supervisor en assistent-supervisor</h3>
           <p>Meer grip op doorstroming, teamverdeling, liftzones en nieuwe medewerkers die eerst vrijgegeven moeten worden.</p>
         </article>
         <article class="signal-card">
@@ -252,7 +286,7 @@
         </article>
         <article class="tree-card">
           <strong>2. Verdelen</strong>
-          <p>De inhoud wordt gesplitst per rol: nieuw, bekend, supervisor en coördinator.</p>
+          <p>De inhoud wordt gesplitst per rol: nieuw, bekend, supervisor, assistent-supervisor en coördinator.</p>
         </article>
         <article class="tree-card">
           <strong>3. Publiceren</strong>
@@ -264,13 +298,13 @@
         </article>
         <article class="tree-card">
           <strong>5. Borgen</strong>
-          <p>Supervisor en coördinator bewaken doorstroming, ontvangst, afwijkingen en audit trail.</p>
+          <p>Supervisor, assistent-supervisor en coördinatie bewaken doorstroming, ontvangst, afwijkingen en audit trail.</p>
         </article>
       </section>
 
       <section class="section-header">
         <p class="eyebrow">Audience</p>
-        <h2>Dezelfde eventdag vraagt om vier verschillende informatievensters.</h2>
+        <h2>Dezelfde eventdag vraagt om vijf verschillende informatievensters.</h2>
       </section>
 
       <section class="role-grid">
@@ -283,7 +317,7 @@
         <article class="role-card">
           <span class="metric-label">Route 2</span>
           <h3>Bekende medewerker</h3>
-          <p>Wat is vandaag anders, welke routing geldt en welke wijzigingen zijn sinds de vorige briefing toegevoegd.</p>
+          <p>Wat is vandaag anders, welke routing geldt en welke wijzigingen sinds de vorige briefing zijn toegevoegd.</p>
           <a class="button button-secondary" href="./app.html?role=bekend">Open route</a>
         </article>
         <article class="role-card">
@@ -292,11 +326,17 @@
           <p>Controle op piekuren, personeelsverdeling, Debras-doorstroming, liftzone en onboardingvrijgave.</p>
           <a class="button button-secondary" href="./app.html?role=supervisor">Open route</a>
         </article>
-        <article class="role-card highlight">
+        <article class="role-card">
           <span class="metric-label">Route 4</span>
+          <h3>Assistent-supervisor</h3>
+          <p>Ondersteunt zaalwisselingen, toezicht op de vloer, onboarding en snelle operationele correcties.</p>
+          <a class="button button-secondary" href="./app.html?role=assistant">Open route</a>
+        </article>
+        <article class="role-card highlight">
+          <span class="metric-label">Route 5</span>
           <h3>Coördinator</h3>
           <p>Publicatie van wijzigingen, work-order beheer, ontvangstcontrole, schade, inhuur en audit trail.</p>
-          <a class="button button-primary" href="./coordinator.html">Open route</a>
+          <a class="button button-primary" href="./coordinator.html" data-protected-role="coordinator">Open route</a>
         </article>
       </section>
 
@@ -307,16 +347,16 @@
 
       <section class="showcase-photo-grid">
         <article>
+          <img class="showcase-photo" src="./assets/media/debras/bruine-bakjes-krat.jpeg" alt="Krat met bruine porseleinen bakjes" />
+          <p class="showcase-caption">Echte beeldset uit het Debras-handboek: porselein, retourlogica en sortering.</p>
+        </article>
+        <article>
           <img class="showcase-photo" src="./assets/media/debras/wijnglazen-krat.jpeg" alt="Krat met wijnglazen" />
-          <p class="showcase-caption">Echte beeldset uit het Debras-handboek: glaswerk en retourlogica.</p>
+          <p class="showcase-caption">Glaswerkherkenning en het juiste krat zijn onmisbaar voor briefing en uitvoering.</p>
         </article>
         <article>
-          <img class="showcase-photo" src="./assets/media/debras/din-blad-goed.jpeg" alt="DIN-blad goed omgekeerd" />
-          <p class="showcase-caption">Visuele instructie maakt correct gedrag direct herkenbaar zonder lange uitleg.</p>
-        </article>
-        <article>
-          <img class="showcase-photo" src="./assets/media/debras/debras-zone-bij-lift.jpeg" alt="Debras-zone bij lift" />
-          <p class="showcase-caption">Debras-zone, routing en afvalscheiding als concrete operationele realiteit.</p>
+          <img class="showcase-photo" src="./assets/media/debras/din-blad-goed.jpeg" alt="Dienblad goed gepositioneerd" />
+          <p class="showcase-caption">Ook Dienbladen horen visueel uitgelegd te worden en niet alleen tekstueel benoemd.</p>
         </article>
       </section>
 
@@ -354,7 +394,7 @@
       </section>
 
       <section class="related-grid">
-        <a class="related-link" href="./work-order.html">
+        <a class="related-link" href="./work-order.html" data-protected-role="workorder">
           <strong>Open live work order</strong>
           <span>Voor eventdetails, versiebeheer en wijzigingsaudit.</span>
         </a>
@@ -364,7 +404,7 @@
         </a>
         <a class="related-link" href="./materials.html">
           <strong>Open visuele bibliotheek</strong>
-          <span>Voor porselein, glas, kratten, bakken, bladen en Debras-zones.</span>
+          <span>Voor porselein, glas, kratten, bakken, Dienbladen en Debras-zones.</span>
         </a>
         <a class="related-link" href="./app.html">
           <strong>Open app</strong>
@@ -382,8 +422,8 @@
         </div>
         <div class="footer-links">
           <a href="./website.html">Portal</a>
-          <a href="./work-order.html">Work Order</a>
-          <a href="./updates.html">Updates</a>
+          <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
+          <a href="./updates.html" data-protected-role="workorder">Updates</a>
           <a href="./app.html">App</a>
         </div>
       </footer>

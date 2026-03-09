@@ -26,14 +26,15 @@
       </a>
       <nav class="ops-nav">
         <a href="./website.html">Portal</a>
-        <a href="./work-order.html">Work Order</a>
+        <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
         <a class="is-active" href="./audiences.html">Routes</a>
         <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
         <a href="./materials.html">Materialen</a>
-        <a href="./updates.html">Updates</a>
-        <a href="./supervisor.html">Supervisor</a>
-        <a href="./coordinator.html">Coördinator</a>
+        <a href="./updates.html" data-protected-role="workorder">Updates</a>
+        <a href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>
@@ -85,11 +86,17 @@
           <p>Piekmomenten, personeelslogica, Debras-doorstroming, liftzonecontrole en controlepunten per tijdsblok.</p>
           <a class="button button-secondary" href="./app.html?role=supervisor">Deel supervisor-link</a>
         </article>
-        <article class="role-card highlight">
+        <article class="role-card">
           <span class="metric-label">Route 4</span>
+          <h3>Assistent-supervisor</h3>
+          <p>Ondersteunt zaalwisselingen, onboarding, materiaalcontrole en snelle operationele correcties op de vloer.</p>
+          <a class="button button-secondary" href="./app.html?role=assistant">Deel assistent-link</a>
+        </article>
+        <article class="role-card highlight">
+          <span class="metric-label">Route 5</span>
           <h3>Coördinator</h3>
           <p>Publicatie, leverancierscontrole, ontvangst, schade, manco-risico, escalaties en versiebeheer.</p>
-          <a class="button button-primary" href="./coordinator.html">Open coördinatorlaag</a>
+          <a class="button button-primary" href="./coordinator.html" data-protected-role="coordinator">Open coördinatorlaag</a>
         </article>
       </section>
 
@@ -101,6 +108,7 @@
               <th>Nieuwe medewerker</th>
               <th>Bekende medewerker</th>
               <th>Supervisor</th>
+              <th>Assistent-supervisor</th>
               <th>Coördinator</th>
             </tr>
           </thead>
@@ -111,11 +119,13 @@
               <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
+              <td>Ja</td>
             </tr>
             <tr>
               <td>Onboarding en checkvragen</td>
               <td>Ja</td>
               <td>Nee</td>
+              <td>Beperkt</td>
               <td>Beperkt</td>
               <td>Nee</td>
             </tr>
@@ -125,16 +135,19 @@
               <td>Beperkt</td>
               <td>Ja</td>
               <td>Ja</td>
+              <td>Ja</td>
             </tr>
             <tr>
               <td>Ontvangst en inhuur</td>
               <td>Nee</td>
               <td>Nee</td>
               <td>Beperkt</td>
+              <td>Beperkt</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>Versiebeheer van work order</td>
+              <td>Nee</td>
               <td>Nee</td>
               <td>Nee</td>
               <td>Nee</td>

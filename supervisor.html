@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
-  <body class="ops-body">
+  <body class="ops-body" data-page-protection="supervisor">
     <div class="ops-grid"></div>
     <header class="ops-header">
       <a class="ops-brand" href="./index.html">
@@ -26,14 +26,15 @@
       </a>
       <nav class="ops-nav">
         <a href="./website.html">Portal</a>
-        <a href="./work-order.html">Work Order</a>
+        <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
         <a href="./audiences.html">Routes</a>
         <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
         <a href="./materials.html">Materialen</a>
-        <a href="./updates.html">Updates</a>
-        <a class="is-active" href="./supervisor.html">Supervisor</a>
-        <a href="./coordinator.html">Coördinator</a>
+        <a href="./updates.html" data-protected-role="workorder">Updates</a>
+        <a class="is-active" href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>

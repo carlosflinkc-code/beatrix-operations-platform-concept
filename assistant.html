@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assistent-supervisor | Beatrix Operations Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@500;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body class="ops-body" data-page-protection="assistant">
+    <div class="ops-grid"></div>
+    <header class="ops-header">
+      <a class="ops-brand" href="./index.html">
+        <span class="ops-brand-mark">
+          <img class="brand-logo" src="./assets/media/jaarbeurs-logo.jpg" alt="Jaarbeurs logo" />
+        </span>
+        <span>
+          <strong>Beatrix Operations Platform</strong>
+          <small>Assistent-supervisor</small>
+        </span>
+      </a>
+      <nav class="ops-nav">
+        <a href="./website.html">Portal</a>
+        <a href="./work-order.html" data-protected-role="workorder">Work Order</a>
+        <a href="./audiences.html">Routes</a>
+        <a href="./zone-map.html">Locaties</a>
+        <a href="./debras.html">Debras</a>
+        <a href="./materials.html">Materialen</a>
+        <a href="./updates.html" data-protected-role="workorder">Updates</a>
+        <a href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a class="is-active" href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
+        <a href="./app.html">App</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="scope-banner scope-banner-accent">
+        Assistent-supervisorlaag voor toezicht op uitvoering, onboarding, zaalwisselingen en snelle operationele correcties.
+      </section>
+
+      <nav class="breadcrumb">
+        <a href="./index.html">Demo</a>
+        <span>/</span>
+        <span>Assistent-supervisor</span>
+      </nav>
+
+      <section class="hero-slab compact-hero">
+        <div class="hero-copy-block">
+          <p class="eyebrow">Route 4</p>
+          <h1>De assistent-supervisorlaag bewaakt de uitvoering tussen medewerker en supervisor.</h1>
+          <p class="lead">
+            Deze laag is bedoeld voor mensen die operationeel aansturen op de vloer, maar niet dezelfde publicatie- en
+            aansprakelijkheidsinformatie nodig hebben als de coördinator.
+          </p>
+        </div>
+        <aside class="side-highlight">
+          <img class="feature-photo" src="./assets/media/debras/transportkar-debras.jpeg" alt="Transportkar voor Debras" />
+          <span class="highlight-label">Focus</span>
+          <strong>Doorstroming, onboarding en zaalwissels</strong>
+          <p>Dit is de laag voor snelle correctie, niet voor volledige work-order besturing.</p>
+        </aside>
+      </section>
+
+      <section class="signal-grid">
+        <article class="signal-card">
+          <h3>Nieuwe mensen begeleiden</h3>
+          <p>Controleert of medewerkers hun onboarding en visuele materiaalcheck hebben afgerond vóór inzet.</p>
+        </article>
+        <article class="signal-card">
+          <h3>Zaalwisselingen ondersteunen</h3>
+          <p>Helpt routing aanpassen tussen Expozaal, Mies Bouwman Foyer en andere operationele punten.</p>
+        </article>
+        <article class="signal-card">
+          <h3>Debras op de vloer bewaken</h3>
+          <p>Ziet toe op Dienbladen, kratten, afvalstromen en vrije liftzone tijdens de piek.</p>
+        </article>
+      </section>
+    </main>
+
+    <script src="./assets/app.js"></script>
+  </body>
+</html>

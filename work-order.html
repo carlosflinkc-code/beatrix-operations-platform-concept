@@ -12,7 +12,7 @@
     />
     <link rel="stylesheet" href="./assets/styles.css" />
   </head>
-  <body class="ops-body">
+  <body class="ops-body" data-page-protection="workorder">
     <div class="ops-grid"></div>
     <header class="ops-header">
       <a class="ops-brand" href="./index.html">
@@ -26,14 +26,15 @@
       </a>
       <nav class="ops-nav">
         <a href="./website.html">Portal</a>
-        <a class="is-active" href="./work-order.html">Work Order</a>
+        <a class="is-active" href="./work-order.html" data-protected-role="workorder">Work Order</a>
         <a href="./audiences.html">Routes</a>
         <a href="./zone-map.html">Locaties</a>
         <a href="./debras.html">Debras</a>
         <a href="./materials.html">Materialen</a>
-        <a href="./updates.html">Updates</a>
-        <a href="./supervisor.html">Supervisor</a>
-        <a href="./coordinator.html">Coördinator</a>
+        <a href="./updates.html" data-protected-role="workorder">Updates</a>
+        <a href="./supervisor.html" data-protected-role="supervisor">Supervisor</a>
+        <a href="./assistant.html" data-protected-role="assistant">Assistent-supervisor</a>
+        <a href="./coordinator.html" data-protected-role="coordinator">Coördinator</a>
         <a href="./app.html">App</a>
       </nav>
     </header>
@@ -99,7 +100,7 @@
             </article>
             <article class="meta-card">
               <span>Coördinator</span>
-              <strong>Noah Geritsen Gerritsen</strong>
+              <strong>Noah Geritsen</strong>
             </article>
           </div>
         </div>
@@ -115,11 +116,11 @@
       <div class="audit-list">
         <article class="audit-item">
           <strong>13:40 · Routing aangepast tussen Expozaal en Mies Bouwman Foyer</strong>
-          <p>Wordt gepubliceerd naar bekende medewerkers, supervisor en coördinator. Nieuwe medewerkers zien alleen hun aangepaste looproute.</p>
+          <p>Wordt gepubliceerd naar bekende medewerkers, supervisor, assistent-supervisor en coördinator. Nieuwe medewerkers zien alleen hun aangepaste looproute.</p>
         </article>
         <article class="audit-item">
           <strong>12:55 · Extra audiovisuele ondersteuning in 114-E Jaarbeurs Meetup</strong>
-          <p>Alleen supervisor en coördinator hoeven dit te zien. De medewerkerroute blijft schoon.</p>
+          <p>Alleen supervisor, assistent-supervisor en coördinator hoeven dit te zien. De medewerkerroute blijft schoon.</p>
         </article>
         <article class="audit-item">
           <strong>11:20 · Onboarding verplicht vóór inzet</strong>
@@ -135,12 +136,14 @@
               <th>Nieuwe medewerker</th>
               <th>Bekende medewerker</th>
               <th>Supervisor</th>
+              <th>Assistent-supervisor</th>
               <th>Coördinator</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Werkplek en zaal</td>
+              <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
@@ -152,10 +155,12 @@
               <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
+              <td>Ja</td>
             </tr>
             <tr>
               <td>Programmadetail en piekmomenten</td>
               <td>Beperkt</td>
+              <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
               <td>Ja</td>
@@ -165,10 +170,12 @@
               <td>Nee</td>
               <td>Nee</td>
               <td>Beperkt</td>
+              <td>Beperkt</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>Publicatie van wijzigingen</td>
+              <td>Nee</td>
               <td>Nee</td>
               <td>Nee</td>
               <td>Nee</td>
