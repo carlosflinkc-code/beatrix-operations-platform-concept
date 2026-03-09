@@ -386,12 +386,42 @@ function wireProtectedLinks() {
 function protectCurrentPage() {
   const pageRole = document.body.getAttribute("data-page-protection");
   if (!pageRole || hasProtectedAccess(pageRole)) return;
+  const protectedContent = document.querySelector("[data-protected-content]");
+  if (!protectedContent) return;
 
-  document.body.classList.add("page-protected");
-  requestProtectedAccess(pageRole, () => {
-    document.body.classList.remove("page-protected");
-    document.body.classList.add("page-unlocked");
-  });
+  protectedContent.classList.add("protected-content", "is-locked");
+
+  let gate = document.querySelector("[data-access-gate]");
+  if (!gate) {
+    gate = document.createElement("section");
+    gate.className = "access-gate";
+    gate.setAttribute("data-access-gate", "");
+    gate.innerHTML = `
+      <p class="eyebrow">Roltoegang</p>
+      <h3>Deze laag is afgeschermd</h3>
+      <p>
+        Deze inhoud is alleen bedoeld voor supervisor, assistent-supervisor of coördinatie. Je kunt hieronder toegang vragen of teruggaan naar openbare onderdelen van het platform.
+      </p>
+      <div class="cta-row">
+        <button class="button button-primary" type="button" data-access-open>Voer PIN in</button>
+      </div>
+      <div class="access-gate-links">
+        <a class="button button-secondary" href="./index.html">Terug naar home</a>
+        <a class="button button-secondary" href="./briefing.html">Open dagbriefing</a>
+        <a class="button button-secondary" href="./materials.html">Open materialen</a>
+        <a class="button button-secondary" href="./app.html?role=nieuw">Open medewerkerroute</a>
+      </div>
+    `;
+    protectedContent.parentNode.insertBefore(gate, protectedContent);
+  }
+
+  const openButton = gate.querySelector("[data-access-open]");
+  openButton.onclick = () => {
+    requestProtectedAccess(pageRole, () => {
+      protectedContent.classList.remove("is-locked");
+      gate.remove();
+    });
+  };
 }
 
 renderUpdateFeed();
