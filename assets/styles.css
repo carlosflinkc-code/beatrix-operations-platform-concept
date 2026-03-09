@@ -2142,3 +2142,416 @@ h3 {
     width: 132px;
   }
 }
+
+/* Style system override: light editorial DWO direction */
+:root {
+  --bg: #f5f5f7;
+  --bg-soft: #f2f2f4;
+  --surface: #ffffff;
+  --surface-2: #f2f2f4;
+  --surface-3: #e8e8ed;
+  --panel: #ffffff;
+  --panel-strong: #ffffff;
+  --line: rgba(17, 17, 17, 0.08);
+  --text: #1d1d1f;
+  --muted: #6e6e73;
+  --blue: #0071e3;
+  --blue-soft: #e8f0fe;
+  --orange: #ff9f0a;
+  --orange-soft: #fff3e0;
+  --green: #30d158;
+  --green-soft: #e8f8ee;
+  --red: #ff3b30;
+  --red-soft: #ffeeed;
+  --shadow: 0 12px 40px rgba(0, 0, 0, 0.08), 0 0 0 1px rgba(0, 0, 0, 0.03);
+  --max-width: 1200px;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(0, 113, 227, 0.08), transparent 22%),
+    linear-gradient(180deg, #f7f7f9 0%, #f3f3f5 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.03em;
+  line-height: 1.04;
+}
+
+.ops-grid {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.22), transparent);
+}
+
+.ops-header {
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(24px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.04);
+}
+
+.ops-brand small,
+.ops-nav a,
+.breadcrumb,
+.section-desc,
+.lead,
+.support-copy,
+.module-card p,
+.panel-card p,
+.metric-card p,
+.dashboard-card p,
+.object-card p,
+.executive-card p,
+.architecture-card p,
+.side-highlight p,
+.phone-card p,
+.role-card p,
+.signal-card p,
+.location-card p,
+.material-item p,
+.coordinator-card p,
+.related-link span,
+.location-source,
+.showcase-caption,
+.subtle-note,
+.scope-inline,
+.route-column ul,
+.route-column ol,
+.meta-card span,
+.workorder-owner,
+.workorder-main p,
+.notice-meta,
+.kpi-card p,
+.summary-card p,
+.scenario-card p,
+.question-card p,
+.flow-card p,
+.hotspot-card p,
+.tree-card p,
+.note-card p,
+.timeline-row p {
+  color: var(--muted);
+}
+
+.ops-nav a {
+  border: 1px solid transparent;
+  color: var(--text);
+}
+
+.ops-nav a:hover,
+.ops-nav a.is-active {
+  color: var(--text);
+  border-color: var(--line);
+  background: var(--surface);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.scope-banner,
+.hero-slab,
+.metric-card,
+.module-card,
+.panel-card,
+.dashboard-card,
+.object-card,
+.table-card,
+.form-card,
+.phone-card,
+.update-summary,
+.update-format,
+.rule-card,
+.related-link,
+.signal-card,
+.role-card,
+.location-card,
+.material-item,
+.workorder-shell,
+.workorder-header,
+.workorder-board,
+.coordinator-card,
+.mini-phone,
+.executive-card,
+.architecture-card,
+.kpi-card,
+.summary-card,
+.scenario-card,
+.question-card,
+.flow-card,
+.hotspot-card,
+.tree-card,
+.note-card,
+.workspace-panel,
+.room-card,
+.contact-card,
+.dispatch-card,
+.flow-step,
+.schematic-node,
+.order-section,
+.order-card,
+.pair-card,
+.pair-frame,
+.public-escape-bar,
+.access-gate,
+.comparison-shell,
+.map-board,
+.map-legend,
+.demo-footer {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
+.scope-banner {
+  color: var(--text);
+}
+
+.scope-banner-strong {
+  background: var(--orange-soft);
+  border-color: rgba(255, 159, 10, 0.18);
+}
+
+.scope-banner-accent {
+  background: var(--blue-soft);
+  border-color: rgba(0, 113, 227, 0.18);
+}
+
+.button-primary {
+  color: #fff;
+  background: var(--blue);
+  box-shadow: 0 6px 18px rgba(0, 113, 227, 0.22);
+}
+
+.button-secondary {
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.hero-visual,
+.feature-photo,
+.hero-stage-visual img,
+.location-media img,
+.material-item img,
+.showcase-photo,
+.pair-frame img {
+  box-shadow: none;
+}
+
+.hero-visual-copy {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.92));
+}
+
+.hero-visual-copy p {
+  color: var(--text);
+}
+
+.metric-label,
+.highlight-label,
+.panel-code,
+.module-tag,
+.eyebrow,
+.update-label {
+  color: var(--blue);
+}
+
+.module-card.accent,
+.panel-card-strong,
+.dashboard-card-strong,
+.workspace-panel-strong,
+.schematic-card,
+.role-card.highlight {
+  background: linear-gradient(180deg, #f4f8ff 0%, #ffffff 100%);
+  border-color: rgba(0, 113, 227, 0.16);
+}
+
+.debras-card {
+  background: linear-gradient(180deg, #fff8ef 0%, #ffffff 100%);
+  border-color: rgba(255, 159, 10, 0.16);
+}
+
+.side-highlight {
+  background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%);
+  border-color: rgba(0, 113, 227, 0.16);
+}
+
+.related-link:hover,
+.module-card:hover,
+.text-link:hover,
+.button:hover,
+.ops-nav a:hover {
+  transform: translateY(-1px);
+}
+
+.status-pill.good,
+.status-chip.stable,
+.pill.stable,
+.tag.stable {
+  background: var(--green-soft);
+  color: #218838;
+  border-color: rgba(48, 209, 88, 0.18);
+}
+
+.status-pill.bad,
+.status-chip.critical,
+.pill.critical,
+.tag.critical {
+  background: var(--red-soft);
+  color: #c0392b;
+  border-color: rgba(255, 59, 48, 0.16);
+}
+
+.status-chip.operational,
+.pill.operational,
+.tag.operational {
+  background: var(--orange-soft);
+  color: #bf6400;
+  border-color: rgba(255, 159, 10, 0.16);
+}
+
+.pill,
+.tag,
+.micro-meta span,
+.meta-card,
+.format-grid div,
+.status-list div,
+.page-tabs a,
+.map-level,
+.map-node,
+.timeline-row,
+.audit-item,
+.route-column,
+.phone-section,
+.workorder-row,
+.ops-kpi,
+.pair-frame,
+.contact-card,
+.dispatch-card,
+.flow-step,
+.schematic-node,
+.order-card {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.workorder-time,
+.workorder-state,
+.fact-row,
+.pair-meta-item,
+.order-text p,
+.stack-list,
+.access-table td,
+.comparison-table td,
+.comparison-table td strong,
+.timeline-row strong,
+.map-node,
+.route-button,
+.phone-chip,
+.phone-chip.alert,
+.footer-links a,
+.access-gate p,
+.public-escape-bar p,
+.access-hint {
+  color: var(--text);
+}
+
+.phone-chip {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+
+.phone-chip.alert {
+  background: var(--orange-soft);
+  color: #bf6400;
+}
+
+.route-button {
+  background: var(--surface);
+}
+
+.route-button.is-active,
+.route-banner {
+  background: var(--blue-soft);
+  border-color: rgba(0, 113, 227, 0.18);
+}
+
+.phone-alert,
+.update-item.highlight,
+.quote-strip {
+  background: var(--orange-soft);
+  border-color: rgba(255, 159, 10, 0.18);
+  color: var(--text);
+}
+
+.update-item {
+  background: var(--surface);
+}
+
+.access-modal {
+  background: rgba(17, 17, 17, 0.2);
+}
+
+.access-dialog {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.access-label {
+  color: var(--text);
+}
+
+.access-input,
+.form-card input,
+.form-card textarea {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.access-gate {
+  background: var(--surface);
+  border-color: rgba(0, 113, 227, 0.16);
+}
+
+.public-escape-bar {
+  background: var(--surface);
+}
+
+.workorder-brand-mark,
+.logo-strip img,
+.ops-brand-mark {
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.order-section {
+  gap: 0;
+  overflow: hidden;
+}
+
+.order-section-header {
+  padding: 22px 24px;
+  border-bottom: 1px solid var(--line);
+  background: var(--surface-2);
+}
+
+.order-text,
+.order-split,
+.order-outline {
+  padding: 20px;
+}
+
+.workspace-nav .pill,
+.order-outline .related-link {
+  background: var(--surface-2);
+}
+
+.demo-footer,
+.footer-links a {
+  color: var(--text);
+}
