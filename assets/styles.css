@@ -3038,3 +3038,379 @@ select {
     display: none;
   }
 }
+
+/* WerkRegie brand refresh */
+
+:root {
+  --bg: #f5f5f7;
+  --bg-soft: #ffffff;
+  --surface: rgba(255, 255, 255, 0.82);
+  --surface-2: rgba(247, 247, 249, 0.92);
+  --panel: rgba(255, 255, 255, 0.8);
+  --panel-strong: rgba(255, 255, 255, 0.96);
+  --line: rgba(15, 23, 42, 0.08);
+  --text: #101114;
+  --text-soft: #667085;
+  --text-faint: #98a2b3;
+  --muted: #667085;
+  --blue: #111111;
+  --blue-soft: rgba(17, 17, 17, 0.06);
+  --orange: #ff6a13;
+  --orange-soft: rgba(255, 106, 19, 0.1);
+  --green: #099250;
+  --green-soft: rgba(9, 146, 80, 0.12);
+  --red: #d92d20;
+  --red-soft: rgba(217, 45, 32, 0.12);
+  --shadow: 0 22px 70px rgba(16, 17, 20, 0.08);
+  --radius-xl: 32px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --radius-sm: 14px;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top center, rgba(255, 106, 19, 0.1), transparent 24%),
+    radial-gradient(circle at 90% 10%, rgba(17, 17, 17, 0.05), transparent 18%),
+    linear-gradient(180deg, #fcfcfd 0%, #f3f4f6 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+  letter-spacing: -0.01em;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3 {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", sans-serif;
+  font-weight: 650;
+}
+
+.ops-grid {
+  background-image:
+    radial-gradient(circle at 20% 18%, rgba(255, 255, 255, 0.9) 0 16%, transparent 17%),
+    linear-gradient(rgba(17, 17, 17, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.025) 1px, transparent 1px);
+  background-size: 100% 100%, 56px 56px, 56px 56px;
+  opacity: 0.55;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), transparent 88%);
+}
+
+.ops-header {
+  padding: 18px 24px;
+  border-bottom: 1px solid rgba(15, 23, 42, 0.05);
+  background: rgba(248, 248, 250, 0.72);
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.05);
+  backdrop-filter: blur(24px) saturate(160%);
+}
+
+.ops-brand {
+  gap: 16px;
+}
+
+.ops-brand strong {
+  font-size: 1.56rem;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.ops-brand small {
+  margin-top: 4px;
+  color: var(--text-soft);
+  font-size: 0.96rem;
+}
+
+.ops-brand-mark {
+  width: 70px;
+  height: 70px;
+  padding: 12px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(241, 241, 244, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 14px 32px rgba(16, 17, 20, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.brand-logo {
+  filter: drop-shadow(0 8px 12px rgba(255, 106, 19, 0.16));
+}
+
+.ops-nav {
+  gap: 8px;
+}
+
+.ops-nav a {
+  padding: 11px 14px;
+  color: var(--text-soft);
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid transparent;
+}
+
+.ops-nav a:hover,
+.ops-nav a.is-active {
+  color: var(--text);
+  border-color: var(--line);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 10px 24px rgba(16, 17, 20, 0.04);
+  transform: translateY(-1px);
+}
+
+.scope-banner,
+.hero-slab,
+.metric-card,
+.module-card,
+.panel-card,
+.dashboard-card,
+.object-card,
+.table-card,
+.form-card,
+.phone-card,
+.update-summary,
+.update-format,
+.rule-card,
+.signal-card,
+.route-column,
+.contact-card,
+.dispatch-card,
+.flow-step,
+.ops-kpi,
+.audit-item,
+.workorder-board,
+.comparison-shell,
+.ia-section,
+.workspace-panel,
+.note-card,
+.kpi-card,
+.summary-card,
+.scenario-card,
+.question-card,
+.flow-card,
+.hotspot-card,
+.tree-card,
+.map-board,
+.map-legend,
+.demo-footer,
+.public-escape-bar,
+.update-item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 248, 250, 0.92));
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.scope-banner {
+  color: var(--text-soft);
+}
+
+.scope-banner-strong,
+.scope-banner-accent,
+.module-card.accent,
+.panel-card-strong,
+.dashboard-card-strong,
+.debras-card,
+.side-highlight,
+.update-item.highlight,
+.phone-alert {
+  background: linear-gradient(180deg, rgba(255, 106, 19, 0.09), rgba(255, 255, 255, 0.96));
+  border-color: rgba(255, 106, 19, 0.16);
+}
+
+.root-card {
+  background:
+    radial-gradient(circle at top right, rgba(255, 106, 19, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 245, 247, 0.94));
+  border: 1px solid rgba(15, 23, 42, 0.06);
+  box-shadow: 0 28px 80px rgba(16, 17, 20, 0.09);
+}
+
+.root-icon {
+  background: linear-gradient(180deg, #ff7b22, #ff5a00);
+  box-shadow: 0 16px 30px rgba(255, 106, 19, 0.24);
+}
+
+.root-title,
+.meta-chip-val {
+  color: var(--text);
+}
+
+.root-subtitle,
+.meta-chip-lbl,
+.related-link span,
+.module-card p,
+.panel-card p,
+.metric-card p,
+.signal-card p,
+.phone-card p,
+.side-highlight p,
+.demo-footer p {
+  color: var(--text-soft);
+}
+
+.meta-chip {
+  background: rgba(255, 255, 255, 0.78);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.eyebrow,
+.update-label,
+.text-link,
+.breadcrumb a:hover {
+  color: var(--orange);
+}
+
+.button-primary {
+  color: #ffffff;
+  background: linear-gradient(180deg, #171717, #050505);
+  box-shadow: 0 18px 44px rgba(17, 17, 17, 0.16);
+}
+
+.button-secondary,
+.footer-links a,
+.page-tabs a,
+.related-link,
+.route-button,
+.phone-section,
+.format-grid div,
+.status-list div,
+.map-level,
+.map-node,
+.workspace-nav .pill,
+.pill,
+.status-chip,
+.ia-count,
+.ia-chevron {
+  background: rgba(255, 255, 255, 0.72);
+  border-color: rgba(15, 23, 42, 0.08);
+  color: var(--text-soft);
+}
+
+.button-secondary,
+.route-button,
+.footer-links a,
+.page-tabs a {
+  color: var(--text);
+}
+
+.route-button.is-active,
+.workspace-nav .pill:hover,
+.workspace-nav .pill:focus-visible {
+  background: rgba(255, 106, 19, 0.1);
+  border-color: rgba(255, 106, 19, 0.2);
+  color: var(--text);
+}
+
+.phone-chip {
+  background: rgba(255, 106, 19, 0.12);
+  color: #d95f14;
+}
+
+.phone-chip.alert,
+.pill.stable {
+  background: rgba(17, 17, 17, 0.06);
+  color: #111111;
+}
+
+.pill.critical,
+.pill.operational {
+  background: rgba(255, 106, 19, 0.12);
+  color: #d95f14;
+}
+
+.status-chip.critical {
+  background: var(--red-soft);
+  color: #b42318;
+}
+
+.status-chip.operational {
+  background: var(--orange-soft);
+  color: #d95f14;
+}
+
+.status-chip.stable {
+  background: rgba(17, 17, 17, 0.06);
+  color: #111111;
+}
+
+.related-link strong,
+.module-card h3,
+.panel-card h3,
+.dashboard-card h3,
+.object-card h3,
+.executive-card h3,
+.architecture-card h3,
+.phone-card h3,
+.update-summary h3,
+.update-format h3,
+.form-card h3,
+.signal-card h3,
+.route-column h3,
+.ia-title,
+.order-card h4 {
+  color: var(--text);
+}
+
+.hero-visual,
+.side-highlight,
+.feature-photo,
+.showcase-photo {
+  border-radius: 22px;
+}
+
+.feature-photo,
+.showcase-photo {
+  box-shadow: 0 18px 40px rgba(16, 17, 20, 0.08);
+}
+
+.phone-card {
+  border-radius: 38px;
+}
+
+.phone-topline,
+.intro-label,
+.metric-label,
+.highlight-label,
+.panel-code,
+.module-tag {
+  color: var(--text-faint);
+}
+
+.breadcrumb,
+.public-escape-bar p,
+.scope-inline {
+  color: var(--text-soft);
+}
+
+.ops-table th,
+.comparison-table th {
+  color: var(--text-faint);
+}
+
+.hero-visual-copy {
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.92));
+}
+
+.hero-visual-copy p {
+  color: var(--text-soft);
+}
+
+.ia-summary:hover {
+  background: rgba(255, 106, 19, 0.04);
+}
+
+.ia-section[open] .ia-chevron {
+  color: #ffffff;
+  background: linear-gradient(180deg, #ff7b22, #ff5a00);
+}
+
+@media (max-width: 920px) {
+  .ops-brand strong {
+    font-size: 1.3rem;
+  }
+
+  .ops-brand-mark {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+  }
+}
